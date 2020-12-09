@@ -1,0 +1,22 @@
+:root {
+    --background-primary:#EBCFB2;
+
+    --background-secondary:#C5BAAF;
+
+    --font-color-primary: #424B54;
+
+    --font-color-link: #C5BAAF;
+
+    --font-color-secondary: #D5ACA9;
+
+    --font-primary: 'Montserrat', sans-serif;
+
+    --font-secondary: 'Quicksand', sans-serif;
+
+    --font-tetrary: 'Raleway', sans-serif;
+
+    --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-primary));
+}
+
+
+
