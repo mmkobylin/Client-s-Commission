@@ -1,5 +1,5 @@
 li{
-    color: var(--main-color);
+    color: var(--font-color-primary);
     font-size: 1rem;
     margin:2rem;
     position: relative;
@@ -7,7 +7,7 @@ li{
   }
 
   li:hover {
-    color: var(--main-color);
+    color: var(--font-color-primary);
     transition: .1s ease;
     -webkit-transition: .1s ease;
   }
@@ -20,7 +20,7 @@ li{
     display: block;
     margin-top: 2px;
     right: 0;
-    background: var(--main-color);
+    background: var(--font-color-primary);
     transition: width .5s ease;
     -webkit-transition: width .5s ease;
   }
@@ -29,7 +29,7 @@ li{
   li:hover:after{
     width: 100%;
     left: 0;
-    background: blue;
+    background: var(--font-color-primary);
   }
 
 
