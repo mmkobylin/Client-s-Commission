@@ -1,6 +1,7 @@
 a {
     color: var(--font-color-link);
     text-decoration: none;
+    padding-right: 10rem;
 }
 
 
