@@ -1,7 +1,6 @@
 
 
 * {
-    background: var(--gradient-primary);
     color: var(--font-color-primary);
     font-family: var(--font-primary);
 }
