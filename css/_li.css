@@ -9,10 +9,6 @@ li {
     position: relative;
   }
 
-  li ul li {
-    padding:1rem;
-  }
-
   li:hover {
     color: var(--font-color-primary);
     transition: .1s ease;
@@ -48,11 +44,11 @@ li {
         padding:3rem;
     }
 
-    li ul li {
+    /* li ul li {
       
       margin-top:4rem;
   
-    }
+    } */
 
 }
 
