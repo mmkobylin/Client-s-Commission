@@ -1,0 +1,46 @@
+li{
+    color: var(--font-color-link);
+    font-size: 1rem;
+    margin:2rem;
+    position: relative;
+    text-decoration: none;
+  }
+
+  li:hover {
+    color: var(--font-color-primary);
+    transition: .1s ease;
+    -webkit-transition: .1s ease;
+  }
+  
+  /* what happens when hover disappears - new speed */
+  li:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: var(--font-color-link);
+    transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+  }
+   
+  /* this is what shows when hover */
+  li:hover:after{
+    width: 100%;
+    left: 0;
+    background: var(--font-color-primary);
+  }
+
+
+
+@media screen and (min-width:600px) { 
+    li{
+
+        display:inline;
+        font-size: 1.8rem;
+        list-style-type: none;
+    }
+}
+
+
