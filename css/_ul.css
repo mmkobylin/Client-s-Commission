@@ -2,7 +2,38 @@ ul {
     margin-top:1rem;
 }
 
+li:hover {
+    cursor: pointer;
+  }
+  
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    list-style-type: none;
+     /* display:inline; */
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    left: 7px;
+    display: none;
+  }
 
+  ul li:active > ul,
+  ul li ul:active,
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display:inline;
+    z-index: 1;
+   }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+  
 @media screen and (min-width:600px) 
     { 
     ul {
