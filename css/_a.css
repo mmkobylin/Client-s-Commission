@@ -5,9 +5,29 @@ a {
 }
 
 
-a:hover {
-    color: var(--font-color-primary);
-    cursor: pointer;
-    transition: .1s ease;
-    -webkit-transition: .1s ease;
+a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 2px;
+    left: 0;
+    background-color: var(--font-color-primary);
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+   a:hover {
+      visibility: visible;
+       opacity: 1;
+       z-index: 1;
+       color: var(--font-color-primary);
+       cursor: pointer;
+       transition: .5s ease;
+       -webkit-transition: .5s ease;
+
+  }
+  
+  a:hover:before {
+    visibility: visible;
+    width: 100%;
   }
