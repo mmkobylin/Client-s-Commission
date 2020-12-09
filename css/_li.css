@@ -1,9 +1,17 @@
-li{
+li {
     color: var(--font-color-link);
+    display:inline;
     font-size: 1rem;
-    margin:2rem;
+    list-style-type: none;
+    padding:0.5rem;
+    margin-bottom: 4rem;
+    margin-top:2rem;
+    margin-right:0.6rem;
     position: relative;
-    text-decoration: none;
+  }
+
+  li ul li {
+    padding:2rem;
   }
 
   li:hover {
@@ -36,10 +44,9 @@ li{
 
 @media screen and (min-width:600px) { 
     li{
-
-        display:inline;
         font-size: 1.8rem;
-        list-style-type: none;
+        margin:2rem;
+        padding:2rem;
     }
 }
 
