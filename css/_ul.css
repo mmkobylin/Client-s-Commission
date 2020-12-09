@@ -10,8 +10,8 @@ opacity: 0;
 list-style-type: none;
 position: absolute;
 transition: all 0.5s ease;
-margin-top: 2rem;
-padding-top: 2rem;
+margin-top: 1rem;
+padding-top: 1rem;
 right: 0.1px;
 display: none;
 }
@@ -28,7 +28,7 @@ z-index: 1;
 
 ul li ul li {
 clear: both;
-width: 100%;
+width: 150%;
 }
 
 @media screen and (min-width:600px) 

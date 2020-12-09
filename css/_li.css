@@ -4,14 +4,13 @@ li {
     font-size: 1rem;
     list-style-type: none;
     padding:0.5rem;
-    margin-bottom: 4rem;
     margin-top:2rem;
     margin-right:0.6rem;
     position: relative;
   }
 
   li ul li {
-    padding:2rem;
+    padding:1rem;
   }
 
   li:hover {
@@ -45,9 +44,16 @@ li {
 @media screen and (min-width:600px) { 
     li{
         font-size: 1.8rem;
-        margin:2rem;
-        padding:2rem;
+        margin-bottom:4rem;
+        padding:3rem;
     }
+
+    li ul li {
+      
+      margin-top:4rem;
+  
+    }
+
 }
 
 
