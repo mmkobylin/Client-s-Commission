@@ -4,5 +4,10 @@
     color: var(--font-color-primary);
     font-family: var(--font-primary);
     margin:0;
-    text-align: center;
+}
+
+p {
+
+    text-align: justify;
+    text-justify: inter-word;
 }
