@@ -6,9 +6,13 @@
     margin:0;
 }
 
-p {
+h1, h2, h3 {
+    font-family: var(--font-tetrary);
+}
 
-    text-align: justify;
-    text-justify: inter-word;
+p {
+    line-height: 1.6;
     padding-top:1rem;
+    text-align: justify;
+    text-justify: inter-word;    
 }
