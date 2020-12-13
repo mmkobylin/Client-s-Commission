@@ -4,5 +4,6 @@
     grid-template-rows: repeat(6 1fr);
     grid-gap: 5rem;
     margin:5rem;
+    margin:3rem;
     text-align: center;
 }
