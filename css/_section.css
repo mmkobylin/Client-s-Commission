@@ -1,9 +1,7 @@
 section {
-    width:75%;
-    margin-left:10%;
-
-    margin-right:15%;
-
+    width:80%;
+    margin:10%;
     display:flex;
     justify-content: space-around;
+    text-align: center;
 }
