@@ -2,4 +2,5 @@ img {
     
     position: relative;
     transition: all .5s ease-in-out;
+    -webkit-transition: 6s; /* For Safari 3.0 to 6.0 */
 }
