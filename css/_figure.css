@@ -19,14 +19,18 @@ figure:hover>img {
     filter:blur(0);
     bottom:100px;
     transition: all .5s ease-in-out;
-    animation: spin 5s ease 2s;
+    animation: spin 15s ease infinite 2s;
     /* animation: spin duration timing-function delay iteration-count direction fill-mode; */
 }
 
 @keyframes spin {
-    0%   {bottom: 0px; transform: scale(1.3) rotate(0deg);}
+    0%   {bottom: 100px; transform: scale(1.3) rotate(0deg);}
+    12.5%  {bottom: 100px; transform: scale(1.3) rotate(90deg);}
     25%  {bottom: 100px; transform: scale(1.3) rotate(90deg);}
+    37.5%  {bottom: 100px; transform: scale(1.3) rotate(180deg);}
     50%  {bottom: 100px; transform: scale(1.3) rotate(180deg);}
+    62.5%  {bottom: 100px; transform: scale(1.3) rotate(270deg);}
     75%  {bottom: 100px; transform: scale(1.3) rotate(270deg);}
+    87.5%  {bottom: 100px; transform: scale(1.3) rotate(270deg);}
     100%  {bottom: 100px; transform: scale(1.3) rotate(360deg);}
   }
