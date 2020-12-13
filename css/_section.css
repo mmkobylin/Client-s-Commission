@@ -1,6 +1,9 @@
 section {
-    width:80%;
-    margin:10%;
+    width:75%;
+    margin-left:10%;
+
+    margin-right:15%;
+
     display:flex;
     justify-content: space-around;
 }

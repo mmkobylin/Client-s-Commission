@@ -1,3 +1,7 @@
-h1, h2 {
+h1 {
     padding-bottom:1rem;
+}
+
+h2 {
+    padding:2rem;
 }
