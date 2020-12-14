@@ -3,14 +3,14 @@ figure {
     border: 10px var(--font-color-primary) double;
     position: relative;
     -webkit-transition: .5s; /* For Safari 3.0 to 6.0 */
-    transition: all .5s ease-in-out;;
+    transition: all .5s ease;
 
 }
 
 figure>img { 
     filter:blur(2px);
     -webkit-transition: .5s; /* For Safari 3.0 to 6.0 */
-    transition: all .5s ease-in-out;;
+    transition: all .5s ease;
 }
 
 figure:hover>img {
