@@ -2,8 +2,7 @@
     display: grid;
 	grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6 1fr);
-    grid-gap: 5rem;
+    grid-gap: 7rem;
     margin:5rem;
-    margin:3rem;
     text-align: center;
 }
