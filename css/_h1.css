@@ -1,7 +1,16 @@
 h1 {
-    padding-bottom:1rem;
+    padding-bottom:0.6rem;
 }
 
 h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
     padding-bottom:2rem;
+}
+
+h4 {
+    padding:1rem;
 }
