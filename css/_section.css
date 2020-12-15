@@ -1,6 +1,7 @@
 section {
     width:80%;
     margin:10%;
+    margin-top:3%;
     display:flex;
     justify-content: space-around;
     text-align: center;
