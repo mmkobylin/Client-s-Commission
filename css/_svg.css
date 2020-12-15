@@ -2,5 +2,4 @@ svg {
     height: 1.6rem;
     width: 1.6rem;
     fill: var(--font-color-primary);
-    /* how fast the icon grows, what type of animation*/
 }

@@ -7,7 +7,6 @@
     position: absolute;
     padding-bottom:1rem;
     padding-top:1rem;
-
     top: -300px;
     width: 100%;
     -webkit-animation: slide 2s forwards;
@@ -15,18 +14,24 @@
 }
 
 #slide1 {
-    animation-delay: 0.3s;
-    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
 }
 
 #slide2 {
     background-color:var(--background-secondary);
 }
 
+
+#slide1:hover, #slide2:hover, #slide3:hover  {
+
+    /* transform: scaleY(10px); */
+
+}
+
 #slide2:hover, #slide3:hover  {
     cursor: pointer;
     background-color: #E5E0DC;
-    
 }
 
 #slide2>.mail {
