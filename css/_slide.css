@@ -2,10 +2,12 @@
 #slide1, #slide2, #slide3  {
     animation: slide 2s forwards;
     animation-delay: 2s;
-    background-color: var(--background-secondary);
+    background-color: var(--background-primary);
     height: 150px;
     position: absolute;
-    padding:1rem;
+    padding-bottom:1rem;
+    padding-top:1rem;
+
     top: -300px;
     width: 100%;
     -webkit-animation: slide 2s forwards;
@@ -18,8 +20,25 @@
 }
 
 #slide2 {
-    background-color:var(--background-primary);
+    background-color:var(--background-secondary);
 }
+
+#slide2:hover, #slide3:hover  {
+    cursor: pointer;
+    background-color: #E5E0DC;
+    
+}
+
+#slide2>.mail {
+    font-size: 1.3rem;
+}
+
+a.mail {
+    padding:0;
+    padding-bottom:1rem;
+}
+
+
 
 @-webkit-keyframes slide {
     100% { top: 0; }
