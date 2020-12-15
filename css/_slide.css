@@ -1,0 +1,30 @@
+
+#slide1, #slide2, #slide3  {
+    background-color:rgb(200, 200, 200);
+    position: absolute;
+    padding:1rem;
+    top: -400px;
+    width: 500px;
+    height: 250px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 3s forwards;
+    animation-delay: 2s;
+}
+
+#slide1 {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+#slide2 {
+    background-color:gray;
+}
+
+@-webkit-keyframes slide {
+    100% { top: 0; }
+}
+
+@keyframes slide {
+    100% { top: 0; }
+}

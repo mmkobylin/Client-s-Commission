@@ -20,6 +20,8 @@
 @import "_section.css";
 
 @import "_sidebar.css";
-
+@import "_slide.css";
 @import "_title.css";
+@import "_wrapper.css";
+
 @import "_ul.css";
