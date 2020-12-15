@@ -34,7 +34,7 @@
     background-color: #E5E0DC;
 }
 
-#slide2>.mail {
+#slide2>.mail, span{
     font-size: 1.3rem;
 }
 

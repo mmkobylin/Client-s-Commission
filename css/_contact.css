@@ -1,6 +1,6 @@
 .contact {
- /* background-color: var(--background-secondary);
-    padding:7rem; */
-    justify-content: right;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
+    
 }
