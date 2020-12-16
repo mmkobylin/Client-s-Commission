@@ -1,8 +1,9 @@
 .gallery {
     display: grid;
 	grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6 1fr);
+    grid-template-rows: 1fr repeat(6 3fr);
     grid-gap: 7rem;
     margin:5rem;
+    margin-top:0rem;
     text-align: center;
 }

@@ -1,3 +1,5 @@
-.subtitle {
-    text-align: center;
+#subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
