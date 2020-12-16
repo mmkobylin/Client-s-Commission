@@ -1,20 +1,23 @@
-figure {
-    
+.figure {
     border: 10px var(--font-color-primary) double;
     position: relative;
     -webkit-transition: .5s; /* For Safari 3.0 to 6.0 */
     transition: all .5s linear;
-
 }
 
-figure>img { 
+.figure>img { 
     filter:blur(2px);
     -webkit-transition: .5s; /* For Safari 3.0 to 6.0 */
     transition: all .5s linear;
 }
 
-figure:hover{
-    /* transform: ; */
+figure>.contact-img { 
+    filter:blur(0);
+    height: 100%;
+}
+
+
+.figure:hover{
     transform: scale(1.17);
     filter:blur(0);
     bottom:100px;

@@ -8,17 +8,11 @@ h2 {
 
 h3 {
     font-size: 2rem;
-<<<<<<< HEAD
-    padding-bottom:2rem;
-=======
     padding-bottom:1rem;
->>>>>>> feature/contact-screen
 }
 
 h4 {
     padding:1rem;
-<<<<<<< HEAD
-=======
 }
 
 h6 {
@@ -26,5 +20,4 @@ h6 {
     padding-bottom:8%;
     padding-top:5%;
 
->>>>>>> feature/contact-screen
 }
