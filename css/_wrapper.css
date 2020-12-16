@@ -1,0 +1,7 @@
+.wrapper1, .wrapper2, .wrapper3 {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 200px; 
+    
+}

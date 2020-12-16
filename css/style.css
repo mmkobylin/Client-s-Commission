@@ -5,6 +5,7 @@
 @import "_a.css";
 @import "_aboutme.css";
 @import "_aside.css";
+@import "_contact.css";
 
 @import "_dropdown.css";
 @import "_figure.css";
@@ -22,9 +23,11 @@
 
 @import "_nav.css";
 @import "_section.css";
+@import "_svg.css";
 
 @import "_sidebar.css";
-@import "_subtitle.css";
-
+@import "_slide.css";
 @import "_title.css";
+@import "_wrapper.css";
+
 @import "_ul.css";

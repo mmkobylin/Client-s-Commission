@@ -1,0 +1,71 @@
+
+#slide1, #slide2, #slide3  {
+    animation: slide 3s forwards alternate, 
+    appear 2s linear alternate;
+    animation-delay: 1s;
+    background-color: var(--background-primary);
+    height: 150px;
+    opacity: 0;
+    position: absolute;
+    padding-bottom:1rem;
+    padding-top:1rem;
+    top: -300px;
+    width: 100%;
+    -webkit-animation: appear 2s forwards;
+    -webkit-animation-delay: 2s;
+}
+
+#slide1 {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+}
+
+#slide2 {
+    background-color:var(--background-secondary);
+}
+
+
+#slide1:hover, #slide2:hover, #slide3:hover  {
+
+    /* transform: scaleY(10px); */
+
+}
+
+#slide2:hover, #slide3:hover  {
+    cursor: pointer;
+    background-color: #E5E0DC;
+}
+
+#slide2>.mail, #slide3>.mail{
+    font-size: 1.3rem;
+}
+
+a.mail {
+    padding:0;
+    padding-bottom:1rem;
+}
+
+
+
+@keyframes slide {
+
+    100% { top: 0; opacity: 1 }
+}
+
+
+@-webkit-keyframes slide {
+
+    100% { top: 0; opacity: 1 }
+}
+
+@keyframes appear {
+    50% {top: 0; opacity: 0.5 }
+
+    100% { top: 0; opacity: 1 }
+}
+
+@-webkit-keyframes appear {
+    50% { top: 0; opacity: 0.5 }
+
+    100% { top: 0; opacity: 1 }
+}
