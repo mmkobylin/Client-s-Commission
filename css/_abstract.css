@@ -6,7 +6,6 @@
     top: 18%;
     right: 25%;
     opacity: 1;
-    z-index: 2;
 }
 
 .abstract2 {
@@ -16,4 +15,10 @@
     top: 18%;
     right: 25%;
     opacity: 0;
+    animation: fade 20s linear infinite;
+}
+
+@keyframes fade {
+    25%, 45% {opacity: 1;};
+    55%, 100% {opacity: 0};
 }
