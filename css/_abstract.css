@@ -1,0 +1,17 @@
+.abstract1 {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    top: 0;
+    right:0;
+    z-index: 1;
+}
+
+.abstract2 {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    top: 0;
+    right:0;
+    z-index: 2;
+}
