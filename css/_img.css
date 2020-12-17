@@ -1,4 +1,4 @@
-img {
+.figure>img {
     height: 80%;
     position: relative;
     transition: all .5s ease-in-out;

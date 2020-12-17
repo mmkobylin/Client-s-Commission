@@ -18,6 +18,32 @@
     animation: fade 20s linear infinite;
 }
 
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+
+.image1 {
+    position: relative;
+    height: 100%;
+    /* width: fit-content; */
+    top: 0;
+    left: 4px;
+    opacity: 1;
+}
+
+.image2 {
+    position: absolute;
+    height: 100%;
+    /* width: fit-content; */
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    animation: fade 20s linear infinite;
+}
+
 @keyframes fade {
     25%, 45% {opacity: 1;};
     55%, 100% {opacity: 0};
