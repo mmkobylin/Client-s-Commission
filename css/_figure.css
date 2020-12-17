@@ -27,7 +27,7 @@ figure>.contact-img {
 }
 
 figure:hover>img {
-    animation: spin 15s linear infinite 2s;
+    animation: spin 20s linear infinite 2s;
     /* animation: spin duration timing-function delay iteration-count direction fill-mode; */
     filter:blur(0);
     transition: all .5s linear;
