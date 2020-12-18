@@ -31,21 +31,33 @@
 }
 
 #slide2>.mail, #slide3>.mail{
-    font-size: 1.3rem;
+    font-size: 0.9rem;
 }
 
-a.mail {
-    padding:0;
-    padding-bottom:1rem;
+span 
+{
+    display: none;
 }
 
 
 @media screen and (min-width: 500px) 
 {
+
     #slide1, #slide2, #slide3  {
        
         height: 150px;
     }
+
+    #slide2>.mail, #slide3>.mail{
+        font-size: 1.3rem;
+    }
+
+    span 
+    {
+        display: inline-block;
+    }
+
+
 }
 
 @keyframes slide {
