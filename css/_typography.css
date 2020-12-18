@@ -7,27 +7,19 @@
     padding:0;
 }
 
-/* h1, h2, h3 {
-    letter-spacing: 3px;
-    font-family: var(--font-tetrary);
-}
 
-h2 {
-    letter-spacing: 6px;
-    font-family: var(--font-tetrary);
-} */
-
-p {
+p 
+{
     line-height: 1.6;
     padding-top:1rem;
     text-align: justify;
     text-justify: inter-word;    
 }
 
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 800px) 
 {
-
-    * {
+    * 
+    {
         text-align: center;
     }
 }
