@@ -1,33 +1,54 @@
-a {
-    color: var(--font-color-link);
-    text-decoration: none;
-    padding-right: 10rem;
+
+@media screen and (min-width:600px) 
+{ 
+  a {
+      color: var(--font-color-link);
+      text-decoration: none;
+      padding-right: 10rem;
+  }
+
+  a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 4px;
+      bottom: 2px;
+      left: 0;
+      background-color: var(--font-color-primary);
+      visibility: hidden;
+      transition: all 0.5s ease;
+    }
+    a:hover {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        color: var(--font-color-primary);
+        cursor: pointer;
+        transition: .5s ease;
+        -webkit-transition: .5s ease;
+
+    }
+    
+    a:hover:before {
+      visibility: visible;
+      width: 100%;
+    }
 }
 
+@media screen and ( max-width:950px ) 
+{
+    a {
+      color: var(--font-color-link);
+      text-decoration: none;
+      padding-right: 1rem;
+  }
+} 
 
-a:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 4px;
-    bottom: 2px;
-    left: 0;
-    background-color: var(--font-color-primary);
-    visibility: hidden;
-    transition: all 0.5s ease;
-  }
-   a:hover {
-      visibility: visible;
-       opacity: 1;
-       z-index: 1;
-       color: var(--font-color-primary);
-       cursor: pointer;
-       transition: .5s ease;
-       -webkit-transition: .5s ease;
 
-  }
-  
-  a:hover:before {
-    visibility: visible;
-    width: 100%;
-  }
+@media screen and ( min-width:600px ) and ( min-width: 950px)
+{ 
+    a {
+      font-size: 1.4rem;
+      padding: 2rem;
+    }
+}

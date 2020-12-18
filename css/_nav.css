@@ -1,17 +1,18 @@
-
-.navbar { 
-    display: none;
+.navbar {
+    background: var( --background-secondary );
+    color: var( --font-color-secondary );
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin:0rem;
+    padding: 1rem;
 }
 
 
-@media screen and (min-width:600px) 
+@media screen and ( min-width:600px ) 
 { 
     .navbar {
-        color: var(--font-color-secondary);
-        font-size: 1.8rem;  
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        background: none;
         margin:1.4rem;
     }
 }

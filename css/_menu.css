@@ -4,13 +4,15 @@
 } 
 
 /* starting new line; */
-.navigation {
+.navigation 
+{
     display: block;
     float: right;
 }
 
 /* that's showing */
-.drop a {
+.drop a 
+{
     display: block;
     float: right;
     z-index: 1;
@@ -18,13 +20,7 @@
 }
 
 /* if hover on navigation: */
-.navigation:hover .drop {
+.navigation:hover .drop 
+{
     display: inline;
 } 
-
-@media screen and (min-width:600px) 
-{ 
-    .menu { 
-        display: none;
-    }
-}

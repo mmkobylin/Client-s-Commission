@@ -10,11 +10,11 @@
 }
 
 .dropdown .dropbtn {
-    font-size: 1.8rem;  
+    font-size: 1rem;  
     border: none;
     outline: none;
     color: var(--font-color-secondary);
-    padding: 2rem 5rem;
+    padding: 1rem 1rem;
     margin: 0;
   }
 
@@ -26,9 +26,10 @@
   }
   
   .dropdown-content a, a {
+    font-size: 1rem;  
     color: var(--font-color-secondary);
     float: none;
-    padding: 2rem 5rem;
+    padding: 1rem 1rem;
     text-decoration: none;
     display: block;
     position: relative;
@@ -47,3 +48,11 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
+@media screen and ( min-width:950px ) 
+{ 
+  .dropdown .dropbtn, .dropdown-content a, a
+    {
+      font-size: 1.8rem;
+      padding: 2rem 5rem;
+    }
+}
