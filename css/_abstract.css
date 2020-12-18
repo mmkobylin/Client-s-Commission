@@ -1,24 +1,19 @@
-.abstract1 {
+.abstract1,
+.abstract2 {
 
     position: absolute;
-    height: 67%;
+    height: 75%;
     width: 50%;
-    top: 18%;
+    top: 13%;
     right: 25%;
-    opacity: 1;
 }
 
 .abstract2 {
-    position: absolute;
-    height: 67%;
-    width: 50%;
-    top: 18%;
-    right: 25%;
     opacity: 0;
     animation: fade 20s linear infinite;
 }
 
-.parent {
+.framework, .framework-index {
     position: relative;
     top: 0;
     left: 0;
@@ -44,7 +39,18 @@
     animation: fade 20s linear infinite;
 }
 
+
+@media screen and (max-width:1300px) 
+    { 
+    .abstract1,
+    .abstract2 {
+    
+        width: 100%;
+    }
+}
+
 @keyframes fade {
     25%, 45% {opacity: 1;};
     55%, 100% {opacity: 0};
 }
+
