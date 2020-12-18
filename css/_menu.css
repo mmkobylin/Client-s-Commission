@@ -1,0 +1,10 @@
+.menu { 
+    display: block;
+}
+
+@media screen and (min-width:600px) 
+{ 
+    .menu { 
+        display: none;
+    }
+}

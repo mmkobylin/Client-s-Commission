@@ -1,17 +1,17 @@
 
-.navbar {
-    color: var(--font-color-secondary);
-    font-size: 1.8rem;  
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin:1.4rem;
+.navbar { 
+    display: none;
 }
 
 
 @media screen and (min-width:600px) 
-    { 
-    nav {
-        text-align: center;
+{ 
+    .navbar {
+        color: var(--font-color-secondary);
+        font-size: 1.8rem;  
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin:1.4rem;
     }
 }
