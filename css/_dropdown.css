@@ -63,7 +63,7 @@
   display: block;
 }
 
-@media screen and ( min-width:600px ) and ( max-width: 950px)
+@media screen and ( min-width:600px ) and ( max-width: 850px)
 
 { 
   .dropdown .dropbtn, .dropdown-content a, .dropdown a, a 
@@ -73,12 +73,21 @@
     }
 }
 
+@media screen and ( min-width: 851px ) and ( max-width: 1250px)
 
-@media screen and ( min-width:951px ) 
+{ 
+  .dropdown .dropbtn, .dropdown-content a, .dropdown a, a 
+    {
+      font-size: 1.7rem;
+      padding: 1rem 1.6rem;
+    }
+}
+
+@media screen and ( min-width: 1251px ) 
 { 
   .dropdown .dropbtn, .dropdown-content a, .dropdown a, a
     {
       font-size: 1.8rem;
-      padding: 2rem 5rem;
+      padding: 2rem 3rem;
     }
 }
