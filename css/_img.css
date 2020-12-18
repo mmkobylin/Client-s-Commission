@@ -1,6 +1,23 @@
+img 
+{
+    height: 15rem;
+    width: 15rem;
+}
+
+
 .figure>img {
-    height: 80%;
-    position: relative;
+    /* height: 80%;
+    position: relative; */
     transition: all .5s ease-in-out;
     -webkit-transition: 6s; /* For Safari 3.0 to 6.0 */
+}
+
+@media screen and (min-width: 500px) 
+{
+    .figure>img 
+    {
+        height: 80%;
+        position: relative; 
+    }
+
 }
