@@ -12,7 +12,7 @@
     animation: fade 20s linear infinite;
 }
 
-@media screen and ( min-width:700px ) 
+@media screen and ( min-width:1000px ) 
 { 
     .abstract1,
     .abstract2 {
@@ -21,7 +21,7 @@
         height: 75%;
         width: 50%;
         top: 13%;
-        right: 25%;
+        /* right: 25%; */
     }
 
     .framework, .framework-index {
