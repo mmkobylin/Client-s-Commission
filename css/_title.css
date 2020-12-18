@@ -1,5 +1,14 @@
 .title {
     position:absolute;                  
-    bottom:10px;                          
-    left:40%; 
+    bottom:15%;                          
+    left:10%; 
+}
+
+@media only screen and (min-width: 700px) 
+{
+    .title 
+    {
+        bottom:7%;                          
+        left: 40%;
+    }    
 }

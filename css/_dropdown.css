@@ -1,15 +1,18 @@
-.dropdown {
+.dropdown 
+{
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content 
+{
   display: none;
   position: absolute;
   background-color: #f1f1f1;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn 
+{
     font-size: 1rem;  
     border: none;
     outline: none;
@@ -18,14 +21,16 @@
     margin: 0;
   }
 
-  .dropdown-content {
+  .dropdown-content 
+  {
     display: none;
     position: absolute;
     min-width: 400px;
     z-index: 1;
   }
   
-  .dropdown-content a, a {
+  .dropdown-content a, a 
+  {
     font-size: 1rem;  
     color: var(--font-color-secondary);
     float: none;
@@ -35,20 +40,39 @@
     position: relative;
   }
   
-  .dropdown-content a:hover, a:hover, .dropbtn:hover {
+  .dropdown-content a:hover, a:hover, .dropbtn:hover 
+  {
     color: var(--font-color-primary);
   }
 
   
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content 
+  
+  {
     display: block;
   }
   
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover 
 
-.dropdown:hover .dropdown-content {display: block;}
+{
+  background-color: #ddd;
+}
 
-@media screen and ( min-width:950px ) 
+.dropdown:hover .dropdown-content 
+{display: block;}
+
+@media screen and ( min-width:600px ) and ( max-width: 950px)
+
+{ 
+  .dropdown .dropbtn, .dropdown-content a, a 
+    {
+      font-size: 1.4rem;
+      padding: 1.3rem;
+    }
+}
+
+
+@media screen and ( min-width:951px ) 
 { 
   .dropdown .dropbtn, .dropdown-content a, a
     {

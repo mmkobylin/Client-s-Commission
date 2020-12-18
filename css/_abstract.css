@@ -1,44 +1,56 @@
+
 .abstract1,
 .abstract2 {
 
     position: absolute;
-    height: 75%;
-    width: 50%;
-    top: 13%;
-    right: 25%;
+    top: 10%;
+    right: 0;
 }
 
-.abstract2 {
-    opacity: 0;
-    animation: fade 20s linear infinite;
+
+@media screen and ( min-width:700px ) 
+{ 
+    .abstract1,
+    .abstract2 {
+
+        position: absolute;
+        height: 75%;
+        width: 50%;
+        top: 13%;
+        right: 25%;
+    }
+
+    .abstract2 {
+        opacity: 0;
+        animation: fade 20s linear infinite;
+    }
+
+    .framework, .framework-index {
+        position: relative;
+        top: 0;
+        left: 0;
+        
+    }
+
+    .image1 {
+        position: relative;
+        height: 100%;
+        /* width: fit-content; */
+        top: 0;
+        left: 4px;
+        opacity: 1;
+    }
+
+    .image2 {
+        position: absolute;
+        height: 100%;
+        /* width: fit-content; */
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        animation: fade 20s linear infinite;
+    }
 }
-
-.framework, .framework-index {
-    position: relative;
-    top: 0;
-    left: 0;
-    
-  }
-
-.image1 {
-    position: relative;
-    height: 100%;
-    /* width: fit-content; */
-    top: 0;
-    left: 4px;
-    opacity: 1;
-}
-
-.image2 {
-    position: absolute;
-    height: 100%;
-    /* width: fit-content; */
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-    animation: fade 20s linear infinite;
-}
-
 
 @media screen and (max-width:1300px) 
     { 

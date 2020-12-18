@@ -6,13 +6,23 @@
     justify-content: flex-end;
     margin:0rem;
     padding: 1rem;
+    padding-right: 2rem;
 }
 
 
-@media screen and ( min-width:600px ) 
+@media screen and ( min-width:600px )
+
+{ 
+    .navbar 
+    {
+        background: none;
+    }
+
+}
+
+@media screen and ( min-width:951px ) 
 { 
     .navbar {
-        background: none;
         margin:1.4rem;
     }
 }

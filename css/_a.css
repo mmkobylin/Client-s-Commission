@@ -45,10 +45,3 @@
 } 
 
 
-@media screen and ( min-width:600px ) and ( min-width: 950px)
-{ 
-    a {
-      font-size: 1.4rem;
-      padding: 2rem;
-    }
-}
