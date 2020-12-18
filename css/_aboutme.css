@@ -1,6 +1,15 @@
 .aboutme {
-    background-color: var(--background-secondary);
-    padding:7rem;
-    justify-content: center;
-    align-self: stretch;
+
 }
+
+@media screen and ( min-width:800px ) 
+{ 
+
+    .aboutme {
+        background-color: var(--background-secondary);
+        padding:7rem;
+        justify-content: center;
+        align-self: stretch;
+    }
+
+}    

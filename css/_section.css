@@ -1,20 +1,23 @@
-section {
-    width:80%;
-    margin:5%;
-    margin-left:10%;
-    margin-right:10%;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-}
+@media screen and ( min-width:800px ) 
+{ 
+    section {
+        width:80%;
+        margin:5%;
+        margin-left:10%;
+        margin-right:10%;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
 
-.section {
-    width:80%;
-    margin:10%;
-    margin-top:3%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    text-align: center;
+    .section {
+        width:80%;
+        margin:10%;
+        margin-top:3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
 }

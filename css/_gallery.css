@@ -1,9 +1,21 @@
-.gallery {
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr repeat(6 3fr);
-    grid-gap: 7rem;
-    margin:5rem;
-    margin-top:0rem;
-    text-align: center;
+@media screen and ( min-width:700px ) 
+{ 
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr repeat(6 3fr);
+        grid-gap: 2rem;
+        margin:5rem;
+        margin-top:0rem;
+        text-align: center;
+    }
+}
+
+@media screen and ( min-width:1000px ) 
+{ 
+
+    .gallery {
+        grid-gap: 7rem;
+    }
 }
