@@ -7,6 +7,10 @@
     right: 0;
 }
 
+.abstract2 {
+    opacity: 0;
+    animation: fade 20s linear infinite;
+}
 
 @media screen and ( min-width:700px ) 
 { 
@@ -18,11 +22,6 @@
         width: 50%;
         top: 13%;
         right: 25%;
-    }
-
-    .abstract2 {
-        opacity: 0;
-        animation: fade 20s linear infinite;
     }
 
     .framework, .framework-index {
