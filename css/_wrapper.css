@@ -1,7 +1,19 @@
-.wrapper1, .wrapper2, .wrapper3 {
+.wrapper1, .wrapper2, .wrapper3 
+{
     position: relative;
     overflow: hidden;
-    width: 400px;
-    height: 200px; 
+    height: 150px; 
+    width: 300px;
     
+}
+
+@media screen and (min-width: 500px) 
+{
+    .wrapper1, .wrapper2, .wrapper3 
+    {
+       
+        height: 200px; 
+        width: 400px;
+
+    }
 }
