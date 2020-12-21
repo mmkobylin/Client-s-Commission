@@ -23,9 +23,9 @@
 
   .dropdown-content 
   {
-    display: none;
+    display: block;
     position: absolute;
-    min-width: 400px;
+    min-width: 200px;
     z-index: 1;
   }
   
@@ -70,8 +70,6 @@
     {
       font-size: 1.4rem;
       padding: 1.3rem;
-      text-align: center;
-
     }
 }
 
@@ -81,7 +79,12 @@
   .dropdown .dropbtn, .dropdown-content a, .dropdown a, a 
     {
       font-size: 1.7rem;
-      padding: 1rem 1.6rem;
+      padding: 2rem 1.6rem;
+    }
+
+    .dropdown-content 
+    {
+      min-width: 350px;
     }
 }
 
@@ -92,4 +95,10 @@
       font-size: 1.8rem;
       padding: 2rem 3rem;
     }
+    
+    .dropdown-content 
+    {
+      min-width: 400px;
+    }
+
 }
