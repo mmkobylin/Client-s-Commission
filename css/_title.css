@@ -4,6 +4,9 @@
     left:10%; 
 }
 
+.title>h1 {
+    padding: 0; 
+}
 @media only screen and (min-width: 700px) 
 {
     .title 
