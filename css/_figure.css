@@ -17,7 +17,6 @@ figure:hover>img
     border: 10px var(--font-color-primary) double;
     position: relative;
     -webkit-transition: .5s;
-    width: 80%;
     margin: 5%;
     transition: all .5s linear;
 }
@@ -55,6 +54,7 @@ figure:hover>img
 
     .figure:hover
     {
+        background-color: var(--background-secondary);
         bottom:100px;
         transform: scale(1.17);
         filter:blur(0);

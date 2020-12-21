@@ -5,6 +5,7 @@
     font-family: var(--font-primary);
     margin:0;
     padding:0;
+    text-align: center;
 }
 
 
@@ -16,10 +17,10 @@ p
     text-justify: inter-word;    
 }
 
-@media screen and (max-width: 800px) 
+/* @media screen and (max-width: 800px) 
 {
     * 
     {
         text-align: center;
     }
-}
+} */
