@@ -43,6 +43,10 @@ span
 @media screen and (min-width: 500px) 
 {
 
+    .message {
+        display: none;
+    }
+    
     #slide1, #slide2 
     {   
         height: 150px;
