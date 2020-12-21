@@ -43,9 +43,15 @@ span
 @media screen and (min-width: 500px) 
 {
 
-    #slide1, #slide2, #slide3  {
-       
+    #slide1, #slide2 
+    {   
         height: 150px;
+    }
+
+    #slide3  {
+       
+        height: 180px;
+        padding-bottom:2rem;
     }
 
     #slide2>.mail, #slide3>.mail{
