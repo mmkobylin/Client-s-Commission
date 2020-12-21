@@ -2,3 +2,22 @@
     height: 100%;
     max-height: 40rem;
 }
+
+@media screen and (max-width: 799px) 
+{
+
+    .main-image 
+    {
+        padding-top: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 800px) 
+{
+    .main-image
+    {
+        padding-top: 0;
+    }
+
+}

@@ -13,6 +13,15 @@
         align-self: stretch;
         justify-content: center;
         margin:0;
+    }
+
+}    
+
+@media screen and ( min-width:1300px ) 
+{ 
+
+    .aboutme 
+    {
         padding:7rem;
     }
 
