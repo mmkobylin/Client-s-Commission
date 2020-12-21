@@ -10,6 +10,7 @@ figure:hover>img
 {
     height: 80%;
     position: relative; 
+    max-height: 20rem;
 }
 
 .figure 
@@ -33,17 +34,15 @@ figure:hover>img
   
     .figure 
     {
-        width: 100%;
+        width: 85%;
     }
 
     .figure>img 
     { 
         filter:blur(2px);
-        height: 20rem;
+        max-height: 24rem;
         -webkit-transition: .5s; /* For Safari 3.0 to 6.0 */
         transition: all .5s linear;
-        width: 20rem;
-
     }
 
     figure>.contact-img 
@@ -56,7 +55,7 @@ figure:hover>img
     {
         background-color: var(--background-secondary);
         bottom:100px;
-        transform: scale(1.17);
+        transform: scale(1.22);
         filter:blur(0);
         transition: all .5s linear;
         z-index: 1;
