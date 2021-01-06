@@ -12,6 +12,21 @@
     animation: fade 20s linear infinite;
 }
 
+
+    .image1 {
+        position: relative;
+        height: 100%;
+        /* width: fit-content; */
+        top: 0;
+        left: 4px;
+        opacity: 1;
+    }
+
+    .image2 {
+        opacity: 0;
+        display: none;
+    }
+
 @media screen and ( min-width:1000px ) 
 { 
     .abstract1,
@@ -31,19 +46,19 @@
         
     }
 
-    .image1 {
-        position: relative;
-        height: 100%;
-        /* width: fit-content; */
-        top: 0;
-        left: 4px;
-        opacity: 1;
-    }
-
-    .image2 {
+    .image1 
+    {
         position: absolute;
         height: 100%;
-        /* width: fit-content; */
+        /* top: 30px; */
+        left: 0px;
+    }
+
+    .image2 
+    {
+        display: inline;
+        position: absolute;
+        height: 100%;
         top: 0px;
         left: 0px;
         opacity: 0;
@@ -57,6 +72,17 @@
     .abstract2 {
     
         width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) 
+    { 
+    .image1,
+    .image2 {
+        
+        margin: 5%;
+        height: 90%;
+        width: 90%;
     }
 }
 
