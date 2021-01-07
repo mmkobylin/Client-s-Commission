@@ -5,6 +5,8 @@
 
 }
 
+
+
 @media screen and ( min-width:1000px ) 
 { 
 
@@ -14,6 +16,10 @@
         justify-content: center;
         margin:0;
         padding:7rem;
+    }
+
+    .aboutart {
+        width: 85%;
     }
 
 }    
