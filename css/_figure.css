@@ -39,11 +39,8 @@ figure:hover>img
     .figure>img 
     { 
         filter:blur(2px);
-        height: 20rem;
         -webkit-transition: .5s; /* For Safari 3.0 to 6.0 */
         transition: all .5s linear;
-        width: 20rem;
-
     }
 
     figure>.contact-img 
