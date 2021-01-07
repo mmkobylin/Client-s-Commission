@@ -1,24 +1,4 @@
-.main-item, .aboutme
+.main-image
 {
-    position: absolute;
-}
-.main-image, .main-image1, .main-image2 {
     max-height: 100%;
 }
-/* 
-.main-image1 {
-    position: relative;
-    /* width: fit-content; */
-    top: 0;
-    left:0;
-    /* opacity: 0; */
-}
-
-.main-image2 {
-    position: relative;
-    top: 0;
-    /* opacity: 0; */
-    /* display: none; */
-    left: 5px;
-    
-} */
