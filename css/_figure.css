@@ -12,6 +12,10 @@ figure:hover>img
     position: relative; 
 }
 
+.figure p {
+    padding: 1rem;
+}
+
 .figure 
 {
     border: 10px var(--font-color-primary) double;
@@ -19,6 +23,7 @@ figure:hover>img
     -webkit-transition: .5s;
     margin: 5%;
     transition: all .5s linear;
+    height: fit-content;
 }
 
 

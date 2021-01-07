@@ -51,3 +51,19 @@ h6
 
 }
 
+
+@media screen and (min-width: 800px) 
+{
+
+    h4
+    {
+        font-size: 1.5;
+    }
+    
+    h5 
+    {
+        font-size: 1.1;
+    }
+
+   
+}
