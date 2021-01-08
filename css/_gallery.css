@@ -16,6 +16,6 @@
 @media screen and ( min-width:1000px ) 
 { 
     .gallery {
-        grid-gap: 7rem;
+        grid-gap: 3rem 6rem;
     }
 }

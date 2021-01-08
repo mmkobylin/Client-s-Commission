@@ -7,8 +7,8 @@
 
 @media screen and ( min-width:600px ) and ( max-width: 1199px )
 { 
-    .image3 {
-        padding: 3rem; 
+    .image1, .image2, .image3 {
+        padding-top: 3rem; 
     }
 }
 
