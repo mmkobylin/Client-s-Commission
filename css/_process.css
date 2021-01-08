@@ -1,0 +1,29 @@
+.process 
+{
+    border: 10px var(--font-color-primary) double;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10%;
+    height: 80%;
+
+}
+
+.process img 
+{
+    width: 100%;
+}
+
+.imagelayer1, .imagelayer2 {
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    opacity: 1;
+}
+
+.imagelayer2 {
+    /* opacity: 0;
+    display: none; */
+
+}
