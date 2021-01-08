@@ -73,13 +73,6 @@
     }
 }
 
-@media screen and ( max-width: 600px )
-{
-    .image1, .image2 {
-        top: 0rem; 
-    }
-}
-
 @media screen and ( min-width:1000px ) and ( max-width: 1199px )
 {
     .image1, .image2 {
@@ -97,7 +90,7 @@
     }
 }
 
-@media screen and (max-width:400px) 
+@media screen and (max-width:1199px) 
     { 
     .image1,
     .image2,
@@ -124,7 +117,6 @@
     {
         display: inline;
         position: absolute;
-        bottom: 500px;
         left: 0px;
         opacity: 0;
         animation: fade 20s linear infinite;
