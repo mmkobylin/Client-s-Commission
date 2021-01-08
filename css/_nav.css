@@ -6,8 +6,8 @@
     justify-content: space-between;
     align-items: center;
     margin:0rem;
-    padding: 1rem;
-    padding-right: 2rem;
+    padding: 0.5rem;
+    /* padding-right: 2rem; */
 }
 
 @media screen and ( min-width:600px )
@@ -26,4 +26,9 @@
     .navbar {
         margin:1.4rem;
     }
+
+    .navbar>a, .dropdown>a 
+    {
+        padding: 2rem 5rem;
+    };
 }

@@ -16,7 +16,6 @@
     .image1 {
         position: relative;
         height: 100%;
-        /* width: fit-content; */
         top: 0;
         left: 0px;
         opacity: 1;
@@ -25,6 +24,7 @@
     .image2 {
         opacity: 0;
         display: none;
+
     }
 
 @media screen and ( min-width:1000px ) 
@@ -46,11 +46,13 @@
         
     }
 
+}
+@media screen and ( min-width:1200px ) 
+{ 
     .image1 
     {
         position: absolute;
         height: 100%;
-        /* top: 30px; */
         left: 0px;
         top: 0px;
         width: 99%;
@@ -71,6 +73,14 @@
     }
 }
 
+@media screen and ( min-width:1000px ) and ( max-width: 1199px )
+{
+    .image1, .image2 {
+        top: 3rem; 
+    }
+}
+
+
 @media screen and (max-width:1300px) 
     { 
     .abstract1,
@@ -80,14 +90,36 @@
     }
 }
 
-@media screen and (max-width:400px) 
+@media screen and (max-width:1199px) 
     { 
     .image1,
-    .image2 {
+    .image2,
+    .image3 {
         
         margin: 5%;
         height: 90%;
         width: 90%;
+    }
+
+    .framework, .framework-index {
+        position: relative;
+        top: 0;
+        left: 0;
+        
+    }
+    
+    .image1 
+    {
+       animation: fade 20s linear infinite;
+    }
+
+    .image2 
+    {
+        display: inline;
+        position: absolute;
+        left: 0px;
+        opacity: 0;
+        animation: fade 20s linear infinite;
     }
 }
 

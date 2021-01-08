@@ -1,6 +1,7 @@
 
 
-*, *::before, *::after {
+*, *::before, *::after 
+{
     color: var(--font-color-primary);
     font-family: var(--font-primary);
     margin:0;
@@ -9,11 +10,9 @@
 
 *:not(aside),
 *:not(.aside)
-    {
-        text-align: center;
-    }
-
-
+{
+    text-align: center;
+}
 
 p 
 {

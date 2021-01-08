@@ -5,12 +5,19 @@
     -webkit-transition: 6s; /* For Safari 3.0 to 6.0 */
 }
 
-/* @media screen and (min-width: 500px) 
-{
-    img 
-    {
+@media screen and ( min-width:600px ) and ( max-width: 1199px )
+{ 
+    .image3 {
+        padding-top: 3rem; 
+    }
+}
+
+@media screen and ( min-width:1200px )  
+{ 
+    .image3 {
         height: 100%;
-        width: fit-content;
+        padding: 0; 
     }
 
-} */
+}
+
