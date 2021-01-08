@@ -9,6 +9,8 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
+  min-width: 200px;
+  z-index: 1;
 }
 
 .dropdown .dropbtn 
@@ -17,37 +19,28 @@
     border: none;
     outline: none;
     color: var(--font-color-secondary);
-    padding: 1rem 1rem;
+    padding: 1rem 0.1rem;
     margin: 0;
-  }
-
-  .dropdown-content 
-  {
-    display: none;
-    position: absolute;
-    min-width: 200px;
-    z-index: 1;
   }
   
   .dropdown-content a, a 
   {
     font-size: 1rem;  
     color: var(--font-color-secondary);
-    float: none;
-    padding: 1rem 1rem;
-    text-decoration: none;
     display: block;
+    float: none;
+    padding: 1.5rem 0.8rem;
     position: relative;
+    text-align: center;
+    text-decoration: none;
   }
   
   .dropdown-content a:hover, a:hover, .dropbtn:hover 
   {
     color: var(--font-color-primary);
   }
-
   
   .dropdown:hover .dropdown-content 
-  
   {
     display: block;
   }
@@ -63,29 +56,48 @@
   display: block;
 }
 
-@media screen and ( min-width:600px ) and ( max-width: 850px)
+.dropdown-content a a 
+{
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+@media screen and ( min-width: 495px ) and ( max-width: 750px)
 
 { 
   .dropdown .dropbtn, .dropdown-content a, .dropdown a, a 
     {
-      font-size: 1.4rem;
-      padding: 1.3rem;
+      font-size: 1.2rem;
     }
 }
 
-@media screen and ( min-width: 851px ) and ( max-width: 1250px)
+@media screen and ( min-width: 600px ) and ( max-width: 750px)
 
 { 
   .dropdown .dropbtn, .dropdown-content a, .dropdown a, a 
     {
-      font-size: 1.7rem;
-      padding: 2rem 1.6rem;
+      padding: 1rem 2rem;
+    }
+}
+
+
+@media screen and ( min-width: 751px ) and ( max-width: 1250px)
+
+{ 
+  .dropdown .dropbtn, .dropdown a, a, .dropdown-content a 
+    {
+      font-size: 1.5rem;
+      padding: 2rem;
     }
 
     .dropdown-content 
     {
-      min-width: 350px;
+      min-width: 270px;
     }
+
+
+
+
 }
 
 @media screen and ( min-width: 1251px ) 
@@ -93,12 +105,21 @@
   .dropdown .dropbtn, .dropdown-content a, .dropdown a, a
     {
       font-size: 1.8rem;
-      padding: 2rem 3rem;
+      padding: 1.92rem 2rem;
     }
     
     .dropdown-content 
     {
-      min-width: 400px;
+      min-width: 300px;
     }
 
 }
+
+@media only screen and (max-width: 350px) 
+{
+  a
+    {
+      padding: 0.1rem;
+    }   
+}
+
