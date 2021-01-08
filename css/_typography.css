@@ -5,8 +5,14 @@
     font-family: var(--font-primary);
     margin:0;
     padding:0;
-    text-align: center;
 }
+
+*:not(aside),
+*:not(.aside)
+    {
+        text-align: center;
+    }
+
 
 
 p 
@@ -17,10 +23,11 @@ p
     text-justify: inter-word;    
 }
 
-/* @media screen and (max-width: 800px) 
+@media screen and (min-width: 800px) 
 {
-    * 
+        aside 
     {
-        text-align: center;
+        width:30%
     }
-} */
+
+}

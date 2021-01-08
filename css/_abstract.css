@@ -18,7 +18,7 @@
         height: 100%;
         /* width: fit-content; */
         top: 0;
-        left: 4px;
+        left: 0px;
         opacity: 1;
     }
 
@@ -52,6 +52,10 @@
         height: 100%;
         /* top: 30px; */
         left: 0px;
+        top: 0px;
+        width: 99%;
+        animation: fade 20s linear infinite;
+
     }
 
     .image2 
@@ -62,6 +66,7 @@
         top: 0px;
         left: 0px;
         opacity: 0;
+        width:99%;
         animation: fade 20s linear infinite;
     }
 }

@@ -11,13 +11,16 @@ h3
 h4 
 {
     padding: 0.8rem;
+    font-size: 1.2rem;
 }
 
+h5 {
+    font-size: 1;
+}
 
 h6 
 {
-    font-size: 1.5rem
-    ;
+    font-size: 1.5rem;
     padding-bottom:8%;
     padding-top:5%;
 
@@ -43,6 +46,16 @@ h6
         font-size: 2rem;
     }
 
+    h4 
+{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+}
+
+    h5 {
+        font-size: 1.2;
+    }
+
     h6 
     {
         font-size: 2rem;
@@ -50,4 +63,5 @@ h6
     }
 
 }
+
 

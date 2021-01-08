@@ -1,7 +1,11 @@
 .homepage-image {
     display: inline;
-    width: 100%;
     height: fit-content;
+    margin-bottom:0;
+    top: 5rem;
+    width: 100%;
+
+
 }
 
 
@@ -9,8 +13,9 @@
 {
     .homepage-image {
         display: inline;
+        height: 65%;
         top: 10rem;
+
     }    
 }
 
-@media only screen and (min-width: 640px) and (max-width: 969px) {

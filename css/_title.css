@@ -1,12 +1,13 @@
 .title {
     position:absolute;                  
-    bottom:15%;                          
-    left:10%; 
+    /* bottom:25%; */
+
 }
 
 .title>h1 {
     padding: 0; 
 }
+
 @media only screen and (min-width: 700px) 
 {
     .title 

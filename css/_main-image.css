@@ -1,3 +1,4 @@
-.main-image {
-    height: 100%;
+.main-image
+{
+    max-height: 100%;
 }
