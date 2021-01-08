@@ -5,21 +5,40 @@
     
 }
 
-@media screen and (max-width: 799px) 
+@media screen and (max-width: 899px) 
 {
 
     .contact-img 
     {
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 }
 
 
-@media screen and (min-width: 800px) 
-{
-    .contact-img 
-    {
-        padding-top: 0.5;
+
+@media screen and ( min-width:850px ) 
+{ 
+    .contact-section {
+        width:80%;
+        margin:5%;
+        margin-left:10%;
+        margin-right:10%;
+        display:flex;
+        justify-content: center;
+        text-align: center;
     }
 
+    .contact-img 
+    {
+        padding-top: 0;
+    }
+}
+
+
+@media screen and ( min-width:1000px ) 
+{ 
+    .contact-img 
+    {
+        padding-left: 2rem;
+    }
 }

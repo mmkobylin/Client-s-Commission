@@ -86,8 +86,8 @@
 { 
   .dropdown .dropbtn, .dropdown a, a, .dropdown-content a 
     {
-      font-size: 1.5rem;
-      padding: 2rem;
+      font-size: 1.3rem;
+      padding: 1.2rem;
     }
 
     .dropdown-content 
