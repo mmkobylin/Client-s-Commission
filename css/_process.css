@@ -16,25 +16,83 @@
     width: 100%;
 }
 
-.imagelayer1, .imagelayer2 {
+/* image needs to show and dissappear */
+.imagelayer1
+{
     position: relative;
-    height: 100%;
+    height: 100%; 
     top: 0;
     left: 0px;
-    opacity: 1;
+    z-index: 0;
 }
 
-.imagelayer2 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
 
+@keyframes process2 {
+    0%, 100% { 
+        z-index: 6;
+    };
+
+    10%, 90% {
+        z-index: 0;
+    }
 }
 
-.imagelayer3 {
-    position: absolute;
-
-    top: 0px;
-    left: 0px;
+.imagelayer2,  
+.imagelayer3, .imagelayer4, .imagelayer6 
+{
     height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: all .2s ease-in-out;
 }
+
+
+
+.imagelayer2
+{
+    animation: process 7s linear 3s forwards;
+    animation-iteration-count: 1;
+    z-index: 2;
+
+}
+
+
+.imagelayer3
+{
+    animation: process 10s linear 6s forwards;
+    animation-iteration-count: 1;
+    z-index: 3;
+
+}
+
+.imagelayer4
+{
+    animation: process 13s linear 10s forwards;
+    animation-iteration-count: 1;
+    z-index: 4;
+}
+
+.imagelayer6
+{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: process 17s linear 14s forwards;
+    animation-iteration-count: 1;
+    z-index: 5;
+    /* this is how you keep the animation in final state */
+
+}
+
+@keyframes process {
+    0% { 
+        opacity: 0;
+    };
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
