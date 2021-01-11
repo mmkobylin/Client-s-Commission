@@ -27,16 +27,6 @@
 }
 
 
-@keyframes process2 {
-    0%, 100% { 
-        z-index: 6;
-    };
-
-    10%, 90% {
-        z-index: 0;
-    }
-}
-
 .imagelayer2,  
 .imagelayer3, .imagelayer4, .imagelayer6 
 {
@@ -48,11 +38,9 @@
     transition: all .2s ease-in-out;
 }
 
-
-
 .imagelayer2
 {
-    animation: process 7s linear 3s forwards;
+    animation: layer 6s linear 3s forwards;
     animation-iteration-count: 1;
     z-index: 2;
 
@@ -61,7 +49,7 @@
 
 .imagelayer3
 {
-    animation: process 10s linear 6s forwards;
+    animation: layer 6s linear 7s forwards;
     animation-iteration-count: 1;
     z-index: 3;
 
@@ -69,7 +57,7 @@
 
 .imagelayer4
 {
-    animation: process 13s linear 10s forwards;
+    animation: layer 6s linear 13s forwards;
     animation-iteration-count: 1;
     z-index: 4;
 }
@@ -77,14 +65,14 @@
 .imagelayer6
 {
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: process 17s linear 14s forwards;
+    animation: layer 6s linear 19s forwards;
     animation-iteration-count: 1;
     z-index: 5;
     /* this is how you keep the animation in final state */
 
 }
 
-@keyframes process {
+@keyframes layer {
     0% { 
         opacity: 0;
     };
