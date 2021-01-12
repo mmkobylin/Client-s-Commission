@@ -4,17 +4,24 @@ button
     color: var(--font-color-secondary);
     font-size: 1rem;
     margin: 2rem;
-    padding:1rem;
-    outline: none;   
+    padding:1rem 1.5rem;
+    outline: none; 
+    /* this is  how tyou change the gradient*/
+    background: linear-gradient(to right, rgb(167, 166, 166) 45%, var(--background-secondary) 53%);
+    /* this is where you enlarge it, 210% extra to cover the edge of*/
+    background-size: 210% 100%;
+    /* this is where you hide it */
+    background-position: right bottom;
+    /* that's the transition */
+    transition: all .5s ease;  
 }
-  
 
 button:hover
 {
-    background-color: #ddd;
-
+    /* this is where the position of background changes */
+    background-position: left bottom;
     color: var(--font-color-primary);
-
+    font-size: bold;
 }
 
 @media screen and ( min-width:700px ) 
@@ -22,7 +29,7 @@ button:hover
     button 
     {
         font-size: 1.25rem;
-        padding: 1.5rem;
+        padding: 1.5rem 2rem;
 
     }
 }
