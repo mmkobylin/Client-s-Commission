@@ -1,0 +1,28 @@
+button 
+{
+    border: none;
+    color: var(--font-color-secondary);
+    font-size: 1rem;
+    margin: 2rem;
+    padding:1rem;
+    outline: none;   
+}
+  
+
+button:hover
+{
+    background-color: #ddd;
+
+    color: var(--font-color-primary);
+
+}
+
+@media screen and ( min-width:700px ) 
+{ 
+    button 
+    {
+        font-size: 1.25rem;
+        padding: 1.5rem;
+
+    }
+}

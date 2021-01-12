@@ -4,7 +4,7 @@
   display: inline-block;
 }
 
-.dropdown-content 
+.dropdown-content
 {
   display: none;
   position: absolute;
@@ -21,7 +21,7 @@
     color: var(--font-color-secondary);
     padding: 1rem 0.1rem;
     margin: 0;
-  }
+}
   
   .dropdown-content a, a 
   {
