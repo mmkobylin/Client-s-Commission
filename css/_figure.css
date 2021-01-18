@@ -1,4 +1,4 @@
-figure:hover>img 
+figure:hover>.spin-img 
 {
     animation: spin 20s linear infinite 2s;
     transition: all .5s linear;
@@ -39,17 +39,11 @@ figure:hover>img
         width: 100%;
     }
 
-    .figure>img 
+    .figure>img
     { 
         filter:blur(2px);
         -webkit-transition: .5s; /* For Safari 3.0 to 6.0 */
         transition: all .5s linear;
-    }
-
-    figure>.contact-img 
-    { 
-        filter:blur(0);
-        height: 100%;
     }
 
     .figure:hover
@@ -62,14 +56,20 @@ figure:hover>img
         z-index: 1;
     }
 
-    figure:hover>img 
+    figure:hover>.spin-img
     {
         animation: spin 20s linear infinite 2s;
-        /* animation: spin duration timing-function delay iteration-count direction fill-mode; */
         filter:blur(0);
         transition: all .5s linear;
     }
 
+    figure>.contact-img 
+    { 
+        animation-play-state: paused;
+        filter:blur(0);
+        height: 100%;
+
+    }
 }
 
 @keyframes spin 
