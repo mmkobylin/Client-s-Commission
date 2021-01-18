@@ -41,49 +41,49 @@
 
 .imagelayer2
 {
-    animation: layer 6s linear 3s forwards;
+    animation: layer 5s linear 4s forwards;
     z-index: 2;
 }
 
 .imagelayer3
 {
-    animation: layer 6s linear 7s forwards;
+    animation: layer 4s linear 7s forwards;
     z-index: 3;
 }
 
 .imagelayer4
 {
-    animation: layer 3s linear 13s forwards;
+    animation: layer 3s linear 11s forwards;
     z-index: 4;
 }
 
 .imagelayer5
 {
-    animation: layer 1.6s linear 17s forwards;
+    animation: layer 2.5s linear 13s forwards;
     z-index: 5;
 }
 
 .imagelayer6
 {
-    animation: layer 0.6s linear 19s forwards;
+    animation: layer 1.5s linear 17s forwards;
     z-index: 6;
 }
 
 .imagelayer7
 {
-    animation: layer 0.6s linear 21s forwards;
+    animation: layer 0.6s linear 20s forwards;
     z-index: 7;
 }
 
 .imagelayer8
 {
-    animation: layer 0.6s linear 23s forwards;
+    animation: layer 0.6s linear 22s forwards;
     z-index: 8;
 }
 
 .imagelayer9
 {
-    animation: layer 0.6s linear 25s forwards;
+    animation: layer 0.6s linear 24s forwards;
     z-index: 9;
 }
 
