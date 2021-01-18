@@ -7,7 +7,7 @@
     margin:2%;
     margin-left:10%;
     margin-right:10%;
-    width: 80%;
+    height: 60%;
 
 }
 
@@ -71,6 +71,16 @@
     /* this is how you keep the animation in final state */
 
 }
+
+@media screen and (min-width: 1450px) {
+    .process 
+        {
+            height: 800px;
+            margin-left:15%;
+            width: 1200px;
+        }
+} 
+
 
 @keyframes layer {
     0% { 
