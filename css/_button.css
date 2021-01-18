@@ -24,12 +24,43 @@ button:hover
     font-size: bold;
 }
 
-@media screen and ( min-width:700px ) 
+@media screen and ( min-width:700px ) and (min-width : 1199px ) 
 { 
     button 
     {
         font-size: 1.25rem;
         padding: 1.5rem 2rem;
 
+    }
+}
+
+
+@media screen and ( min-width:1200px ) 
+{ 
+
+    button {
+        margin: 0;
+        margin-left: 2rem;
+    }
+
+    .btn-command
+    {
+        font-size: 2.5rem;
+        letter-spacing: 2rem;
+        padding: 5rem 2rem;
+        writing-mode: vertical-rl;
+        text-transform: uppercase;
+        text-orientation: upright;
+
+
+    }
+}
+
+@media screen and ( min-width:1400px ) 
+{ 
+
+    .btn-command
+    { 
+        letter-spacing: 2rem;
     }
 }

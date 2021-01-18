@@ -2,16 +2,6 @@ article
 {
     background-color: var( --background-secondary );
     padding:3.5rem;
-    
-    /* position: relative;
-    top: 0;
-    left: 0;
-    background-color: var( --background-secondary );
-    padding: 7rem;
-    margin-left:10%;
-    margin-right:10%;
-    width: 70%; */
-    
 }
 
 @media screen and ( min-width:1000px ) 

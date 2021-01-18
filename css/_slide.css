@@ -34,7 +34,7 @@
     font-size: 0.9rem;
 }
 
-span 
+span:not(.btn-command)
 {
     display: none;
 }
