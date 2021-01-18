@@ -51,8 +51,10 @@ button:hover
         writing-mode: vertical-rl;
         text-transform: uppercase;
         text-orientation: upright;
+    }
 
-
+    .button:hover {
+        font-weight: bold;
     }
 }
 
