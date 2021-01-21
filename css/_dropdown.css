@@ -29,10 +29,13 @@
     color: var(--font-color-secondary);
     display: block;
     float: none;
-    padding: 1.5rem 0.8rem;
     position: relative;
     text-align: center;
     text-decoration: none;
+  }
+
+  .dropdown-content a, a:not(.message, .mail) {
+    padding: 1.5rem 0.8rem;
   }
   
   .dropdown-content a:hover, a:hover, .dropbtn:hover 

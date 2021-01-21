@@ -30,7 +30,7 @@
     background-color: #E5E0DC;
 }
 
-#slide2>.mail, #slide3>.phone{
+.mail, .phone, .message {
     font-size: 0.9rem;
 }
 
@@ -56,10 +56,20 @@ span:not(.btn-command), .phone
         padding-bottom:2rem;
     }
 
-    #slide2>.mail, #slide3>.phone{
-        font-size: 1.3rem;
+    .mail, .phone {
+        font-size: 1.3rem;   
     }
 
+    .mail:hover, .message:hover, .phone:hover {
+        color: var(--font-color-primary);
+        font-size: 1.3rem;
+        font-weight: bolder;
+       
+    }
+
+    .message {
+        padding: auto;
+    }
     span 
     {
         display: inline-block;
@@ -68,6 +78,7 @@ span:not(.btn-command), .phone
 
     .phone
     {
+        color: var(--font-color-secondary);
         display: inline;
     }
 }
