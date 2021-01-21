@@ -66,6 +66,10 @@ span:not(.btn-command), .phone
         font-size: 1.3rem;
     }
 
+    .phone
+    {
+        display: inline;
+    }
 }
 
 @keyframes slide {
