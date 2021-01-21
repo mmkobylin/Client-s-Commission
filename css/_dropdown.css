@@ -87,7 +87,9 @@
 @media screen and ( min-width: 751px ) and ( max-width: 1250px)
 
 { 
-  .dropdown .dropbtn, .dropdown a, a, .dropdown-content a 
+  
+  .dropdown .dropbtn, .dropdown a, a:not(.message, .mail),
+   .dropdown-content a
     {
       font-size: 1.3rem;
       padding: 1.2rem;
