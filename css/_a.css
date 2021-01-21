@@ -1,4 +1,4 @@
-a.mail 
+a.mail, .phone 
 {
   padding:0;
   padding-bottom:1rem;
@@ -48,11 +48,11 @@ a.mail
 @media screen and ( max-width:950px ) 
 
 {
-    a 
-    {
-      color: var(--font-color-link);
-      text-decoration: none;
-      padding-right: 1rem;
+  a
+  {
+    color: var(--font-color-link);
+    text-decoration: none;
+    padding-right: 1rem;
   }
 } 
 
