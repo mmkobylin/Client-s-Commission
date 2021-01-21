@@ -34,7 +34,7 @@
     font-size: 0.9rem;
 }
 
-span:not(.btn-command )
+span:not(.btn-command)
 {
     display: none;
 }
@@ -69,7 +69,7 @@ span:not(.btn-command )
 
     .phone {
     
-        display: inline-block;
+        display: none;
     }
 
 

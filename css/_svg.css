@@ -1,5 +1,13 @@
 svg {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1rem;
+    width: 1rem;
     fill: var(--font-color-primary);
+}
+
+@media screen and (min-width: 500px) 
+{
+    svg {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
 }
