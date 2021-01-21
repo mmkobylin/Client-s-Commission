@@ -21,6 +21,7 @@ button:hover
     /* this is where the position of background changes */
     background-position: left bottom;
     color: var(--font-color-primary);
+    cursor: pointer;
     font-size: bold;
 }
 
