@@ -8,9 +8,7 @@
     padding:0;
 }
 
-*:not(aside),
-*:not(.aside),
-*:not(button)
+*:not(aside, .aside, button, .aboutme p, article p )
 {
     text-align: center;
 }
