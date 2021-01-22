@@ -1,35 +1,35 @@
 ul {
     margin-bottom: 2rem;
-
     margin-top: 2rem;
 }
 
 ul li ul {
-visibility: hidden;
-opacity: 0;
-list-style-type: none;
-position: absolute;
-transition: all 0.5s ease;
-margin-top: 1rem;
-padding-top: 1rem;
-right: 0.1px;
-display: none;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    margin-top: 1rem;
+    opacity: 0;
+    padding-top: 1rem;
+    position: absolute;
+    right: 0.1px;
+    transition: var(--transition);
+    visibility: hidden;
 }
 
 ul li:active > ul,
 ul li ul:active,
 ul li:hover > ul,
 ul li ul:hover {
-visibility: visible;
-opacity: 1;
-display:inline;
-z-index: 1;
-}
+    display:inline;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    }
 
 ul li ul li {
-clear: both;
-width: 150%;
-}
+    clear: both;
+    width: 150%;
+    }
 
 @media screen and (min-width:600px) 
     { 

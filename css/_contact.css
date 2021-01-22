@@ -19,13 +19,12 @@
 @media screen and ( min-width:850px ) 
 { 
     .contact-section {
-        width:80%;
-        margin:5%;
-        margin-left:10%;
-        margin-right:10%;
         display:flex;
         justify-content: center;
+        margin:1% 10%;
         text-align: center;
+        width:80%;
+
     }
 
     .contact-img 

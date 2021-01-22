@@ -80,6 +80,7 @@ span:not(.btn-command), .phone
     {
         color: var(--font-color-secondary);
         display: inline;
+        transition: var(--transition);
     }
 }
 
