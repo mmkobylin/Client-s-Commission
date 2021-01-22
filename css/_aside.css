@@ -5,6 +5,16 @@ aside {
 }
 
 aside {
-    text-align: left;
+   text-align: left;
  }
 
+.main-gallery aside {
+   display: none;
+}
+
+@media screen and (min-width: 800px) 
+{
+   .main-gallery aside {
+      display: grid;
+   }
+}
