@@ -1,5 +1,5 @@
 footer {
-    background: linear-gradient(45deg, var(--font-color-link) 0% 20%, var(--font-color-primary));
+    background: linear-gradient(155deg, var(--font-color-link), var(--font-color-primary) 30% 70%, var(--font-color-link));
     color: var(--background-primary);
     font-size: 1rem;
     font-family: var(--font-secondary);
