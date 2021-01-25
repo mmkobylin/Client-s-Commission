@@ -6,8 +6,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr repeat(6 3fr);
         grid-gap: 2rem;
-        margin:7.5%;
-        margin-top:2rem;
+        margin:0 5%;
         text-align: center;
         width: 85%;
     }

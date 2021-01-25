@@ -1,13 +1,12 @@
 .navbar {
+    align-items: center;
     background: var( --background-secondary );
     color: var( --font-color-secondary );
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin:0rem;
     padding: 0.5rem;
-    /* padding-right: 2rem; */
+    margin:0rem;
 }
 
 @media screen and ( min-width:600px )
@@ -29,6 +28,6 @@
 
     .navbar>a, .dropdown>a 
     {
-        padding: 2rem 5rem;
+        padding: 2rem 3rem;
     };
 }
