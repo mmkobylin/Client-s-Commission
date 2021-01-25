@@ -1,0 +1,9 @@
+footer {
+    background: linear-gradient(45deg, var(--font-color-link) 0% 20%, var(--font-color-primary));
+    color: var(--background-primary);
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+
+    padding: 1rem;
+
+}
