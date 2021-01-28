@@ -3,11 +3,25 @@ footer {
     color: var(--background-primary);
     font-size: 1rem;
     font-family: var(--font-secondary);
-
     padding: 1rem;
-
 }
 
 footer p {
     line-height: 3rem;
+}
+
+
+@media screen and (min-width: 800px) 
+{
+    footer {
+      
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 2rem 0;
+    }
+
+    footer p {
+        line-height: 4rem;
+    }
+    
 }
