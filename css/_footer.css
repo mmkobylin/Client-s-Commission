@@ -1,6 +1,7 @@
 footer {
-    background: linear-gradient(155deg, var(--font-color-link), var(--font-color-primary) 30% 70%, var(--font-color-link));
-    color: var(--background-primary);
+    background: linear-gradient(
+        0deg, var(--font-color-link) 0%, var(--font-color-primary) 15% 85%, 
+        var(--font-color-link));    color: var(--background-primary);
     font-size: 1rem;
     font-family: var(--font-secondary);
     padding: 1rem;
@@ -10,18 +11,27 @@ footer p {
     line-height: 3rem;
 }
 
-
 @media screen and (min-width: 800px) 
 {
     footer {
       
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: bold;
         padding: 2rem 0;
+        margin-top: 4rem;
     }
 
     footer p {
-        line-height: 4rem;
+        line-height: 3rem;
     }
     
+}
+
+@media screen and (max-width: 400px) 
+{
+    footer p {
+        font-size: 0.75rem;
+        line-height: 2rem;
+
+    }
 }
