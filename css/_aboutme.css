@@ -5,17 +5,13 @@
 
 }
 
-
-
 @media screen and ( min-width:1000px ) 
 { 
-
-    .aboutme 
+  .aboutme 
     {
         align-self: stretch;
         justify-content: center;
         margin:0;
-        padding:7rem;
     }
 
     .aboutart {
@@ -40,3 +36,11 @@
     }
 
 }    
+
+@media screen and ( min-width:1350px ) 
+{
+.aboutme 
+    {   
+        padding: 7rem
+    }
+}

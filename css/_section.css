@@ -12,13 +12,13 @@
     }
 
     .section {
-        width:80%;
-        margin:10%;
-        margin-top:3%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-content: center;
+        margin:10%;
+        margin-top:3%;
         text-align: center;
+        width:80%;
     }
 }
