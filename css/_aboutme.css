@@ -12,12 +12,12 @@
         align-self: stretch;
         justify-content: center;
         margin:0;
+        padding:5.5rem;
     }
 
     .aboutart {
         width: 85%;
     }
-
 }    
 
 @media screen and ( max-width:400px ) 
