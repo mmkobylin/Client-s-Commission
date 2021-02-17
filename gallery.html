@@ -170,17 +170,19 @@
 
                 /* Initiate Magnify Function
                 with the id of the image, and the strength of the magnifier glass:*/
-                document.getElementById('show').addEventListener("click", display);
-           
-                function display() {
+                var glassEnabler = document.getElementById('show')
+
+                glassEnabler.addEventListener("click", function () {
                     magnify("abstract", 2)
-                }
+                    glassEnabler.disabled = true;
+                    } 
+                );
                 
                 hide = document.getElementById('hide').addEventListener("click", dissappear);
 
                 function dissappear(){
                     var arr = document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
-                    //location.reload();
+                    glassEnabler.disabled = false;
                 }
             
             </script>
