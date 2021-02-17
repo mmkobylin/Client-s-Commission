@@ -111,7 +111,7 @@
                     <h5>SOLD</h5>
                     <p>Size: 12" x 12"</p>
                     <button id="show">Magnify</button>
-                    <button id="rt">Rotate</button>
+                    <button id="hide">Hide</button>
                 </figure>
             </div>
             <script defer type="text/javascript" language="javascript">
@@ -170,19 +170,18 @@
 
                 /* Initiate Magnify Function
                 with the id of the image, and the strength of the magnifier glass:*/
-                show = document.getElementById('show').addEventListener("click", display);
+                document.getElementById('show').addEventListener("click", display);
            
                 function display() {
                    magnify("abstract", 2)
                 }
                 
+                hide = document.getElementById('hide').addEventListener("click", dissappear);
+
+                function dissappear(){
+                    document.querySelector(".img-magnifier-glass").style.display="none";
+                }
             
-                var image = document.getElementById('abstract');
-                image.style.transform = 'rotate(90deg)';
-                document.getElementById("hide").addEventListener('click', function(){
-                current_rotation += 90;
-                document.getElementById("abstract").style.transform = 'rotate(' + current_rotation + 'deg)';
-                });
             </script>
         
         </main>
