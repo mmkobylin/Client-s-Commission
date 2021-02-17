@@ -110,20 +110,12 @@
                     <h4>Untitled, Catalogue no.8 </h4>
                     <h5>SOLD</h5>
                     <p>Size: 12" x 12"</p>
-                    <button>glass</button>
-                </figure>
-
-                <figure class="figure">
-                    <div class="img-magnifier-container">
-                        <img id = "abstract" class="spin-img" src="images/gallery/unnamed4.jpg" alt="painting for Sandra">
-                    </div>
-                    <h4>Untitled, Catalogue no.8 </h4>
-                    <h5>SOLD</h5>
-                    <p>Size: 12" x 12"</p>
-                    <button>glass</button>
+                    <button id="show">Magnify</button>
+                    <button id="rt">Rotate</button>
                 </figure>
             </div>
-            <script>
+            <script defer type="text/javascript" language="javascript">
+                
                 function magnify(imgID, zoom) {
                   var img, glass, w, h, bw;
                   img = document.getElementById(imgID);
@@ -175,12 +167,22 @@
                     return {x : x, y : y};
                   }
                 }
-                </script>
-                                
-            <script>
+
                 /* Initiate Magnify Function
                 with the id of the image, and the strength of the magnifier glass:*/
-                magnify("abstract", 3);
+                show = document.getElementById('show').addEventListener("click", display);
+           
+                function display() {
+                   magnify("abstract", 2)
+                }
+                
+            
+                var image = document.getElementById('abstract');
+                image.style.transform = 'rotate(90deg)';
+                document.getElementById("hide").addEventListener('click', function(){
+                current_rotation += 90;
+                document.getElementById("abstract").style.transform = 'rotate(' + current_rotation + 'deg)';
+                });
             </script>
         
         </main>
