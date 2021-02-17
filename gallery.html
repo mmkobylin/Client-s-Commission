@@ -173,13 +173,14 @@
                 document.getElementById('show').addEventListener("click", display);
            
                 function display() {
-                   magnify("abstract", 2)
+                    magnify("abstract", 2)
                 }
                 
                 hide = document.getElementById('hide').addEventListener("click", dissappear);
 
                 function dissappear(){
-                    document.querySelector(".img-magnifier-glass").style.display="none";
+                    var arr = document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
+                    //location.reload();
                 }
             
             </script>
