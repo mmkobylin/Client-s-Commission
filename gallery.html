@@ -172,17 +172,23 @@
                 with the id of the image, and the strength of the magnifier glass:*/
                 var glassEnabler = document.getElementById('show')
 
+                var glassDisabler = document.getElementById('hide');
+                glassDisabler.disabled = true; 
+
                 glassEnabler.addEventListener("click", function () {
                     magnify("abstract", 2)
                     glassEnabler.disabled = true;
+                    glassDisabler.disabled = false;
+                    
                     } 
                 );
                 
-                hide = document.getElementById('hide').addEventListener("click", dissappear);
-
-                function dissappear(){
-                    var arr = document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
+                glassDisabler.addEventListener("click", disable) 
+                
+                function disable (){
+                    document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
                     glassEnabler.disabled = false;
+                    glassDisabler.disabled = true;
                 }
             
             </script>
