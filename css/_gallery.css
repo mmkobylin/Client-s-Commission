@@ -4,7 +4,7 @@
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr repeat(6 3fr);
+        grid-template-rows: 1fr repeat(6 1fr);
         grid-gap: 2rem;
         margin:0 5%;
         text-align: center;
