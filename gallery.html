@@ -156,7 +156,7 @@
                     if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
                     if (y < h / zoom) {y = h / zoom;}
                     /*set the position of the magnifier glass:*/
-                    glass.style.left = (x) + "px";
+                    glass.style.left = (x/7) + "vh";
                     glass.style.top = (y - h) + "px";
                     /*display what the magnifier glass "sees":*/
                     glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
