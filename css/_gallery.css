@@ -1,3 +1,18 @@
+.img-magnifier-container {
+    position:relative;
+  }
+  
+  .img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 130px;
+    height: 130px;
+    z-index: 5;
+    left: 60px;
+  }
+
 @media screen and ( min-width:700px ) 
 { 
 
