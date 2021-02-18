@@ -74,19 +74,29 @@
     // buttonArray[5].addEventListener("click", magnify6)
     // buttonArray[6].addEventListener("click", magnify7)
     // buttonArray[7].addEventListener("click", magnify8)
-    buttonArray[8].addEventListener("click", newMagnify)
+    // buttonArray[8].addEventListener("click", newMagnify)
 
+    function valuation() {
+        forEach (i = 0; i < 9; i++) {
+            buttonArray[i].addEventListener("click", function() {
+                var value = combine(i);
+                // magnifies ${value} as it is corresponding to imgID
+                magnify(`${value}`, 2);
+            });
+        }
+    }
+    valuation();
+
+    // function takes a number
     function combine(number) {
+        // declares two strings
         var str1 = "abstract";
         var str2 = `${number}`;
+        // disables or enables the correct items in the array
         buttonArray[number-1].disabled = true;
         hideArray[number-1].disabled = false;
+        // returns two combined strings
         return (str1.concat(str2));
-    }
-
-    function newMagnify() {
-        var value = combine(9);
-        magnify(`${value}`, 2);
     }
 
     function disable(){
