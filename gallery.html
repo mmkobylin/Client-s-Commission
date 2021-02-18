@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300&family=Raleway:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" href="../jeremys_portfolio/images/pgntree-red-blue smoke abstract frame art.png">
+        <script defer src="gallery.js" charset="utf-8"></script>
 
     </head>
 
@@ -44,18 +45,29 @@
             <div class="gallery">
                 <h2>Gallery</h2>
                 <figure class="figure">
-                    <img class="spin-img" src="images/gallery/black&white1r.jpg" alt="abstract image1">
+                    <img id="abstract1" class="spin-img" src="images/gallery/black&white1r.jpg" alt="abstract image1">
                     <h4>Untitled, Catalogue no.1</h4>
                     <h5>Price: £250</h5>
-                    <p>Size: 16" x 24"</p>                 
-                
+                    <p>Size: 16" x 24"</p> 
+                    <button id="btn1">Magnify</button>
+                    <button id="hide" onClick="disable()">Hide</button>              
                 </figure>
+
+                <script>
+
+                    function show2 () {
+                        magnify("abstract2", 2);
+                        document.getElementById("hide").disabled = false;
+                    }
+                </script>
                 
                 <figure class="figure">
-                    <img class="spin-img" src="images/gallery/black&white2r.jpg" alt="abstract image 2">
+                    <img id="abstract2" class="spin-img" src="images/gallery/black&white2r.jpg" alt="abstract image 2">
                     <h4>Untitled, Catalogue no.2</h4>
                     <h5>Price: £250</h5>
                     <p>Size: 16" x 24"</p>
+                    <button onClick="show2()">Magnify</button>
+                    <button id="hide" onClick="disable()">Hide</button> 
 
                 </figure>
                 
@@ -101,6 +113,7 @@
                     <h4>Untitled, Catalogue no.7 </h4>
                     <h5>SOLD</h5>
                     <p>Size: 12" x 12"</p>
+                    
                 </figure>
 
                 <figure class="figure">
@@ -185,7 +198,7 @@
                 
                 glassDisabler.addEventListener("click", disable) 
                 
-                function disable (){
+                function disable(){
                     document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
                     glassEnabler.disabled = false;
                     glassDisabler.disabled = true;

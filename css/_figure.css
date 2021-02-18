@@ -1,8 +1,8 @@
-figure:hover>.spin-img 
+/* figure:hover .spin-img 
 {
     animation: spin 20s linear infinite 2s;
     transition: all .5s linear;
-}
+} */
 
 .figure>img 
 {
@@ -31,9 +31,7 @@ figure:hover>.spin-img
 }
 
 @media screen and (min-width: 700px) 
-    
 {
-  
     .figure 
     {
         width: 100%;
