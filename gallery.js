@@ -74,7 +74,7 @@
     buttonArray[5].addEventListener("click", magnify6)
     buttonArray[6].addEventListener("click", magnify7)
     buttonArray[7].addEventListener("click", magnify8)
-    buttonArray[8].addEventListener("click", magnify9)
+    buttonArray[8].addEventListener("click", newMagnify)
 
     function magnify1() {
         magnify("abstract1", 2)
@@ -124,10 +124,21 @@
         hideArray[7].disabled = false;
     }
 
-    function magnify9() {
-        magnify("abstract9", 2)
-        buttonArray[8].disabled = true;
-        hideArray[8].disabled = false;
+    function combine(number) {
+        var str1 = "abstract";
+        var str2 = `${number}`;
+        return (str1.concat(str2));
+    }
+    
+    function enable(arrayNumber) {
+        buttonArray[arrayNumber].disabled = true;
+        hideArray[arrayNumber].disabled = false;
+    }
+
+    function newMagnify() {
+        var value = combine(9);
+        magnify(`${value}`, 2);
+        enable(8);
     }
 
     function disable(){
