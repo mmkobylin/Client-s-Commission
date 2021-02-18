@@ -52,15 +52,19 @@
         }
       }
     
-    show1 = d.getElementById("btn1");
+    show = d.getElementById("btn");
 
-    show1.addEventListener("click", magnify1)
+    show.addEventListener("click", magnify1)
 
-    hideGlass = d.getElementById("hide");
+    hide1Glass = d.getElementById("hide1");
 
-    hideGlass.addEventListener("click", disable);
+    hide1Glass.addEventListener("click", disable(1));
 
-    var glassDisabler = document.getElementById('hide');
+    hide2Glass = d.getElementById("hide2");
+
+    hide2Glass.addEventListener("click", disable);
+
+    var glassDisabler = document.getElementById('hide1');
 
     glassDisabler.disabled = true; 
 
@@ -70,10 +74,16 @@
         show1.disabled = true;
     }
 
+    function magnify2() {
+        magnify("abstract2", 2);
+        glassDisabler.disabled = false;
+        show2.disabled = true;
+    }
+
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
         glassDisabler.disabled = true;
-        show1.disabled = false;
+        show.disabled = false;
     }
 
     
