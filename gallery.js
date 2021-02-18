@@ -55,8 +55,14 @@
 
     buttonArray = Array.from(d.querySelectorAll("#btn"));
     
+    hideArray = Array.from(d.querySelectorAll("#hide"));
+
     d.querySelectorAll("#hide").forEach(item => {
         item.addEventListener('click', disable);
+        }
+    )
+    d.querySelectorAll("#hide").forEach(item => {
+        item.disabled = true 
         }
     )
 
@@ -73,46 +79,55 @@
     function magnify1() {
         magnify("abstract1", 2)
         buttonArray[0].disabled = true;
+        hideArray[0].disabled = false;
     }
 
     function magnify2() {
         magnify("abstract2", 2)
         buttonArray[1].disabled = true;
+        hideArray[1].disabled = false;
     }
 
     function magnify3() {
         magnify("abstract3", 2)
         buttonArray[2].disabled = true;
+        hideArray[2].disabled = false;
     }
 
     function magnify4() {
         magnify("abstract4", 2)
         buttonArray[3].disabled = true;
+        hideArray[3].disabled = false;
     }
 
     function magnify5() {
         magnify("abstract5", 2)
         buttonArray[4].disabled = true;
+        hideArray[4].disabled = false;
     }
 
     function magnify6() {
         magnify("abstract6", 2)
         buttonArray[5].disabled = true;
+        hideArray[5].disabled = false;
     }
 
     function magnify7() {
         magnify("abstract7", 2)
         buttonArray[6].disabled = true;
+        hideArray[6].disabled = false;
     }
 
     function magnify8() {
         magnify("abstract8", 2)
         buttonArray[7].disabled = true;
+        hideArray[7].disabled = false;
     }
 
     function magnify9() {
         magnify("abstract9", 2)
         buttonArray[8].disabled = true;
+        hideArray[8].disabled = false;
     }
 
     function disable(){
