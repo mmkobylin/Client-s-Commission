@@ -83,16 +83,10 @@
         hideArray[number-1].disabled = false;
         return (str1.concat(str2));
     }
-    
-    // function enable(arrayNumber) {
-    //     buttonArray[arrayNumber].disabled = true;
-    //     hideArray[arrayNumber].disabled = false;
-    // }
 
     function newMagnify() {
         var value = combine(9);
         magnify(`${value}`, 2);
-        // enable(8);
     }
 
     function disable(){
