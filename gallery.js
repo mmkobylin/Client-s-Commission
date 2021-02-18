@@ -68,6 +68,10 @@
 
     hide2Glass.addEventListener("click", disable);
 
+
+    hideArray = Array.from(d.querySelectorAll("#hide"));
+    console.log(hideArray);
+
     var glassDisabler = document.getElementById('hide1');
 
     glassDisabler.disabled = true; 
