@@ -26,6 +26,10 @@ button
     opacity: 1;
 }
 
+.figure:not(:hover) .img-magnifier-glass {
+    display: none;
+}
+
 .figure button {
     box-shadow: inset 0 0 2px 2px var(--font-color-primary);
     margin-bottom: 1rem;
