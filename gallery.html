@@ -59,9 +59,11 @@
                     <img id="abstract2" class="spin-img" src="images/gallery/black&white2r.jpg" alt="abstract image 2">
                     <h4>Untitled, Catalogue no.2</h4>
                     <h5>Price: £250</h5>
-                    <p>Size: 16" x 24"</p>
-                    <button id="btn2">Magnify</button>
-                    <button id="hide2">Hide</button>
+                    <p>Size: 16" x 24"</p> 
+                    <div class="buttons">
+                        <button id="btn2">Magnify</button>
+                        <button id="hide2">Hide</button>     
+                    </div> 
                 </figure>
                 
                 <figure class="figure">
@@ -69,6 +71,10 @@
                     <h4>Untitled, Catalogue no.3 </h4>
                     <h5>Price: £140</h5>
                     <p>Size: 12" x 12</p>
+                    <div class="buttons">
+                        <button id="btn3">Magnify</button>
+                        <button id="hide3">Hide</button>     
+                    </div> 
                                 
                 </figure>
                 
@@ -76,8 +82,11 @@
                     <img class="spin-img" src="images/gallery/black&white4s.jpg" alt="abstract image 4">
                     <h4>Untitled, Catalogue no.4 </h4>
                     <h5>Price: £140</h5>
-                    <p>Size: 12" x 12</p>
-                                
+                    <p>Size: 12" x 12"</p>
+                    <div class="buttons">
+                        <button id="btn4">Magnify</button>
+                        <button id="hide4">Hide</button>     
+                    </div>                                 
                 </figure>
 
                 <figure class="figure">
@@ -85,6 +94,10 @@
                     <h4>Red, Blue, White</h4>
                     <h5>SOLD</h5>
                     <p>Size: 16" x 24"</p>
+                    <div class="buttons">
+                        <button id="btn5">Magnify</button>
+                        <button id="hide5">Hide</button>     
+                    </div> 
                 </figure>
                 
                 <figure class="figure">
@@ -92,6 +105,10 @@
                     <h4>Untitled, Catalogue no.5 </h4>
                     <h5>Price: £240</h5>
                     <p>Size: 16" x 24"</p>
+                    <div class="buttons">
+                        <button id="btn6">Magnify</button>
+                        <button id="hide6">Hide</button>     
+                    </div> 
                 </figure>
 
                 <figure class="figure">
@@ -99,6 +116,10 @@
                     <h4>Untitled, Catalogue no.6 </h4>
                     <h5>SOLD</h5>
                     <p>Size: 12" x 12"</p>
+                    <div class="buttons">
+                        <button id="btn7">Magnify</button>
+                        <button id="hide7">Hide</button>     
+                    </div> 
                 </figure>
 
                 <figure class="figure">
@@ -106,6 +127,10 @@
                     <h4>Untitled, Catalogue no.7 </h4>
                     <h5>SOLD</h5>
                     <p>Size: 12" x 12"</p>
+                    <div class="buttons">
+                        <button id="btn8">Magnify</button>
+                        <button id="hide8">Hide</button>     
+                    </div> 
                     
                 </figure>
 
@@ -116,33 +141,12 @@
                     <h4>Untitled, Catalogue no.8 </h4>
                     <h5>SOLD</h5>
                     <p>Size: 12" x 12"</p>
-                    <button id="show">Magnify</button>
-                    <button id="hide">Hide</button>
+                    <div class="buttons">
+                        <button id="btn9">Magnify</button>
+                        <button id="hide9">Hide</button>     
+                    </div> 
                 </figure>
             </div>
-            <script>
-
-                /* Initiate Magnify Function
-                with the id of the image, and the strength of the magnifier glass:*/
-                var glassEnabler = document.getElementById('show')
-
-                glassEnabler.addEventListener("click", function () {
-                    magnify("abstract", 2)
-                    glassEnabler.disabled = true;
-                    glassDisabler.disabled = false;
-                    
-                    } 
-                );
-                
-                glassDisabler.addEventListener("click", disable) 
-                
-                function disable(){
-                    document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
-                    glassEnabler.disabled = false;
-                    glassDisabler.disabled = true;
-                }
-            
-            </script>
         
         </main>
         <footer>

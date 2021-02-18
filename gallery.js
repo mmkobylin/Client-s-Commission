@@ -52,13 +52,17 @@
         }
       }
     
-    show = d.getElementById("btn");
+    show1 = d.getElementById("btn1");
 
-    show.addEventListener("click", magnify1)
+    show1.addEventListener("click", magnify1)
+
+    show2 = d.getElementById("btn2");
+
+    show2.addEventListener("click", magnify2)
 
     hide1Glass = d.getElementById("hide1");
 
-    hide1Glass.addEventListener("click", disable(1));
+    hide1Glass.addEventListener("click", disable);
 
     hide2Glass = d.getElementById("hide2");
 
@@ -83,7 +87,13 @@
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
         glassDisabler.disabled = true;
-        show.disabled = false;
+        if (show1.disabled === true) {
+            show1.disabled = false;
+        } else if (show2.disabled === true) {
+            show2.disabled = false;
+        } else {
+            console.log('koza');
+        }
     }
 
     
