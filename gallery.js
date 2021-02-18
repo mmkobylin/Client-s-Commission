@@ -66,27 +66,6 @@
         }
     )
 
-    // buttonArray[0].addEventListener("click", magnify1)
-    // buttonArray[1].addEventListener("click", magnify2)
-    // buttonArray[2].addEventListener("click", magnify3)
-    // buttonArray[3].addEventListener("click", magnify4)
-    // buttonArray[4].addEventListener("click", magnify5)
-    // buttonArray[5].addEventListener("click", magnify6)
-    // buttonArray[6].addEventListener("click", magnify7)
-    // buttonArray[7].addEventListener("click", magnify8)
-    // buttonArray[8].addEventListener("click", newMagnify)
-
-    function valuation() {
-        forEach (i = 0; i < 9; i++) {
-            buttonArray[i].addEventListener("click", function() {
-                var value = combine(i);
-                // magnifies ${value} as it is corresponding to imgID
-                magnify(`${value}`, 2);
-            });
-        }
-    }
-    valuation();
-
     // function takes a number
     function combine(number) {
         // declares two strings
@@ -98,6 +77,21 @@
         // returns two combined strings
         return (str1.concat(str2));
     }
+
+    function valuation() {
+        for ( i = 0; i < 9; i++) {
+                buttonArray[i].addEventListener("click", function() {
+                    var value = combine(i);
+                    // magnifies ${value} as it is corresponding to imgID
+                    magnify(`${value}`, 2);
+                } )
+            }
+        }
+
+    valuation();
+
+    // const funcs = [1, 2, 3].map(i => () => console.log(i));
+    // funcs.map(fn => fn())
 
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
