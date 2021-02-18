@@ -133,9 +133,6 @@
                 with the id of the image, and the strength of the magnifier glass:*/
                 var glassEnabler = document.getElementById('show')
 
-                var glassDisabler = document.getElementById('hide');
-                glassDisabler.disabled = true; 
-
                 glassEnabler.addEventListener("click", function () {
                     magnify("abstract", 2)
                     glassEnabler.disabled = true;

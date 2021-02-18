@@ -60,12 +60,20 @@
 
     hideGlass.addEventListener("click", disable);
 
+    var glassDisabler = document.getElementById('hide');
+
+    glassDisabler.disabled = true; 
+
     function magnify1() {
         magnify("abstract1", 2);
+        glassDisabler.disabled = false;
+        show1.disabled = true;
     }
 
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
+        glassDisabler.disabled = true;
+        show1.disabled = false;
     }
 
     
