@@ -54,20 +54,70 @@
     
 
     buttonArray = Array.from(d.querySelectorAll("#btn"));
+    
+    d.querySelectorAll("#hide").forEach(item => {
+        item.addEventListener('click', disable);
+        }
+    )
 
     buttonArray[0].addEventListener("click", magnify1)
-
-    hideArray = Array.from(d.querySelectorAll("#hide"));
-
-    hideArray[0].addEventListener("click", disable);
-        
+    buttonArray[1].addEventListener("click", magnify2)
+    buttonArray[2].addEventListener("click", magnify3)
+    buttonArray[3].addEventListener("click", magnify4)
+    buttonArray[4].addEventListener("click", magnify5)
+    buttonArray[5].addEventListener("click", magnify6)
+    buttonArray[6].addEventListener("click", magnify7)
+    buttonArray[7].addEventListener("click", magnify8)
+    buttonArray[8].addEventListener("click", magnify9)
 
     function magnify1() {
         magnify("abstract1", 2)
+        buttonArray[0].disabled = true;
+    }
+
+    function magnify2() {
+        magnify("abstract2", 2)
+        buttonArray[1].disabled = true;
+    }
+
+    function magnify3() {
+        magnify("abstract3", 2)
+        buttonArray[2].disabled = true;
+    }
+
+    function magnify4() {
+        magnify("abstract4", 2)
+        buttonArray[3].disabled = true;
+    }
+
+    function magnify5() {
+        magnify("abstract5", 2)
+        buttonArray[4].disabled = true;
+    }
+
+    function magnify6() {
+        magnify("abstract6", 2)
+        buttonArray[5].disabled = true;
+    }
+
+    function magnify7() {
+        magnify("abstract7", 2)
+        buttonArray[6].disabled = true;
+    }
+
+    function magnify8() {
+        magnify("abstract8", 2)
+        buttonArray[7].disabled = true;
+    }
+
+    function magnify9() {
+        magnify("abstract9", 2)
+        buttonArray[8].disabled = true;
     }
 
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
+
     }
 
     
