@@ -52,50 +52,22 @@
         }
       }
     
-    show1 = d.getElementById("btn1");
 
-    show1.addEventListener("click", magnify1)
+    buttonArray = Array.from(d.querySelectorAll("#btn"));
 
-    show2 = d.getElementById("btn2");
-
-    show2.addEventListener("click", magnify2)
-
-    hide1Glass = d.getElementById("hide1");
-
-    hide1Glass.addEventListener("click", disable);
-
-    hide2Glass = d.getElementById("hide2");
+    buttonArray[0].addEventListener("click", magnify1)
 
     hideArray = Array.from(d.querySelectorAll("#hide"));
 
     hideArray[0].addEventListener("click", disable);
         
-    var glassDisabler = document.getElementById('hide1');
-
-    glassDisabler.disabled = true; 
 
     function magnify1() {
-        magnify("abstract1", 2);
-        glassDisabler.disabled = false;
-        show1.disabled = true;
-    }
-
-    function magnify2() {
-        magnify("abstract2", 2);
-        glassDisabler.disabled = false;
-        show2.disabled = true;
+        magnify("abstract1", 2)
     }
 
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
-        glassDisabler.disabled = true;
-        if (show1.disabled === true) {
-            show1.disabled = false;
-        } else if (show2.disabled === true) {
-            show2.disabled = false;
-        } else {
-            console.log('koza');
-        }
     }
 
     
