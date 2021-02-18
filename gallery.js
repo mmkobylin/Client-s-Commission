@@ -132,7 +132,14 @@
 
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
-
+        d.querySelectorAll("#hide").forEach(item => {
+            item.disabled = true ;
+            }
+        )
+        d.querySelectorAll("#btn").forEach(item => {
+            item.disabled = false; 
+            }
+        )
     }
 
     
