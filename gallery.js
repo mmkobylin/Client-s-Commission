@@ -51,17 +51,20 @@
           return {x : x, y : y};
         }
       }
-    
+     
 
     buttonArray = Array.from(d.querySelectorAll("#btn"));
     
     hideArray = Array.from(d.querySelectorAll("#hide"));
 
-    d.querySelectorAll("#hide").forEach(item => {
+    hideItems = d.querySelectorAll("#hide");
+    console.log(hideItems);
+
+    hideItems.forEach(item => {
         item.addEventListener('click', disable);
         }
     )
-    d.querySelectorAll("#hide").forEach(item => {
+    hideItems.forEach(item => {
         item.disabled = true 
         }
     )
