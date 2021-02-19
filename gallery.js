@@ -77,7 +77,6 @@
         // returns two combined strings
         return (str1.concat(str2));
     }
-
     
     function valuation() {
         for (let i = 0; i < buttonArray.length; i++) {
@@ -91,13 +90,13 @@
         }
     }
    
-    buttonArray.forEach(
-        valuation
-    );
-    
+    valuation();
 
     function disable(){
-        document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
+        d.querySelectorAll(".img-magnifier-glass").forEach(item => {
+            item.classList.toggle("img-magnifier-glass");
+        }) 
+        
         d.querySelectorAll("#hide").forEach(item => {
             item.disabled = true ;
             }
@@ -107,7 +106,5 @@
             }
         )
     }
-
-    
 })(document);
 
