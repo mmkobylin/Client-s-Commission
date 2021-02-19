@@ -61,13 +61,12 @@
     console.log(hideItems);
 
     hideItems.forEach(item => {
-        item.addEventListener('click', disable);
+        item.addEventListener('click', () => { 
+            disable();
+            item.disabled = true 
         }
-    )
-    hideItems.forEach(item => {
-        item.disabled = true 
-        }
-    )
+        )
+    })
 
     // function takes a number
     function combine(number) {
@@ -100,7 +99,7 @@
             item.classList.toggle("img-magnifier-glass");
         }) 
         
-        d.querySelectorAll("#hide").forEach(item => {
+        hideItems.forEach(item => {
             item.disabled = true ;
             }
         )
