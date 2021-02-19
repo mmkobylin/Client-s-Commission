@@ -1,7 +1,8 @@
 ((d) => {
     var w = window.innerWidth;
 
-    if (w > 500) {
+    if (w > 500 && w < 700 || w > 1000 ) {
+
         function magnify(imgID, zoom) {
             var img, glass, w, h, bw;
             img = document.getElementById(imgID);
@@ -109,8 +110,6 @@
         }
         
         display();
-    } else {
-        console.log('kloza')
     }
 })(document);
 
