@@ -63,7 +63,9 @@
         filter:blur(0);
         height: 100%;
     }
-    
+}
+@media screen and (min-width: 1000px) 
+{
     .figure:hover .buttons {
         display: inline-block;
         opacity: 1;
