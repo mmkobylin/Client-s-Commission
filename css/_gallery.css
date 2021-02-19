@@ -14,12 +14,11 @@
 
 @media screen and ( min-width:700px ) 
 { 
-
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr repeat(6 1fr);
-        grid-gap: 2rem;
+        grid-gap: 1rem;
         margin:0 5%;
         text-align: center;
         width: 85%;
@@ -29,6 +28,6 @@
 @media screen and ( min-width:1000px ) 
 { 
     .gallery {
-        grid-gap: 3rem 6rem;
+        grid-gap: 1rem 1.5rem;
     }
 }
