@@ -78,20 +78,21 @@
         return (str1.concat(str2));
     }
 
+    
     function valuation() {
-        for ( i = 0; i < 9; i++) {
+        for (let i = 0; i < 9; i++) {
                 buttonArray[i].addEventListener("click", function() {
                     var value = combine(i);
                     // magnifies ${value} as it is corresponding to imgID
                     magnify(`${value}`, 2);
-                } )
-            }
+                    console.log(value);
+                } 
+            )
         }
-
+    }
+   
     valuation();
-
-    // const funcs = [1, 2, 3].map(i => () => console.log(i));
-    // funcs.map(fn => fn())
+    
 
     function disable(){
         document.querySelector(".img-magnifier-glass").classList.toggle("img-magnifier-glass");
