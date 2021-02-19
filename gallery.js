@@ -72,26 +72,28 @@
         var str1 = "abstract";
         var str2 = `${number}`;
         // disables or enables the correct items in the array
-        buttonArray[number-1].disabled = true;
-        hideArray[number-1].disabled = false;
+        buttonArray[number].disabled = true;
+        hideArray[number].disabled = false;
         // returns two combined strings
         return (str1.concat(str2));
     }
 
     
     function valuation() {
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < buttonArray.length; i++) {
                 buttonArray[i].addEventListener("click", function() {
                     var value = combine(i);
                     // magnifies ${value} as it is corresponding to imgID
                     magnify(`${value}`, 2);
-                    console.log(value);
+                    console.log(value)
                 } 
             )
         }
     }
    
-    valuation();
+    buttonArray.forEach(
+        valuation
+    );
     
 
     function disable(){
