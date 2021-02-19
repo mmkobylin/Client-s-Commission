@@ -1,8 +1,8 @@
-/* figure:hover .spin-img 
+.spin-img:hover
 {
     animation: spin 20s linear infinite 2s;
     transition: all .5s linear;
-} */
+}
 
 .figure>img 
 {
@@ -23,7 +23,6 @@
     transition: all .5s linear;
     height: fit-content;
 }
-
 
 .figure:hover
 {
@@ -54,11 +53,8 @@
         z-index: 1;
     }
 
-    .spin-img:hover
-    {
-        animation: spin 20s linear infinite 0s;
+    .figure:hover>img {
         filter:blur(0);
-        transition: all .5s linear;
     }
 
     figure>.contact-img 
@@ -66,7 +62,11 @@
         animation-play-state: paused;
         filter:blur(0);
         height: 100%;
-
+    }
+    
+    .figure:hover .buttons {
+        display: inline-block;
+        opacity: 1;
     }
 }
 

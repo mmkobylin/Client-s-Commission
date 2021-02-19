@@ -21,11 +21,6 @@ button
     opacity: 0;
 }
 
-.figure:hover .buttons {
-    display: inline-block;
-    opacity: 1;
-}
-
 .figure:not(:hover) .img-magnifier-glass {
     display: none;
 }
