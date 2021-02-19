@@ -50,23 +50,36 @@
           y = y - window.pageYOffset;
           return {x : x, y : y};
         }
-      }
-     
-
-    buttonArray = Array.from(d.querySelectorAll("#btn"));
-    
-    hideArray = Array.from(d.querySelectorAll("#hide"));
-
+    }
+    // this is returning as a nodelist OBJECT
     hideItems = d.querySelectorAll("#hide");
-    console.log(hideItems);
+    // this one changes it into an array
+    hideArray = Array.from(hideItems);
+    // disabling hide buttons at the beginning
+    hideItems.forEach(item => {
+        item.disabled = true; 
+    })
+
+    buttonItems = d.querySelectorAll("#btn");
+    buttonArray = Array.from(buttonItems);
 
     hideItems.forEach(item => {
         item.addEventListener('click', () => { 
             disable();
             item.disabled = true 
-        }
+            }
         )
-    })
+    });
+
+    function disable(){
+        d.querySelectorAll(".img-magnifier-glass").forEach(item => {
+            item.classList.toggle("img-magnifier-glass");
+        }) 
+        buttonItems.forEach(item => {
+            item.disabled = false; 
+            }
+        )
+    }
 
     // function takes a number
     function combine(number) {
@@ -86,7 +99,6 @@
                     var value = combine(i);
                     // magnifies ${value} as it is corresponding to imgID
                     magnify(`${value}`, 2);
-                    console.log(value)
                 } 
             )
         }
@@ -94,19 +106,5 @@
    
     valuation();
 
-    function disable(){
-        d.querySelectorAll(".img-magnifier-glass").forEach(item => {
-            item.classList.toggle("img-magnifier-glass");
-        }) 
-        
-        hideItems.forEach(item => {
-            item.disabled = true ;
-            }
-        )
-        d.querySelectorAll("#btn").forEach(item => {
-            item.disabled = false; 
-            }
-        )
-    }
 })(document);
 
