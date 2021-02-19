@@ -2,7 +2,7 @@
     display: grid;
     justify-content: center;
     align-content: flex-end;
-    
+    margin: 0;
 }
 
 @media screen and (max-width: 899px) 
