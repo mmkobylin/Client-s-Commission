@@ -8,7 +8,6 @@
 }
 
 .shop-item-details {
-    display: block;
     margin: 0;
 }
 
@@ -22,3 +21,26 @@
     padding: 1rem;
 }
 
+.grid-details button::before { 
+    content: "\A"; 
+    white-space: pre; 
+}
+
+.grid-details span::before { 
+    content: "\A"; 
+    white-space: pre; 
+}
+
+
+@media screen and ( min-width:700px ) and ( max-width: 999px )
+{
+    .shop-item span, .shop-item button{
+        font-size: 1.2rem;
+    }
+}    
+
+@media screen and ( min-width:1000px ) {
+    .shop-item span, .shop-item button{
+        font-size: 1.5rem;
+    }
+}
