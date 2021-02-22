@@ -1,14 +1,8 @@
-.spin-img:hover
-{
-    animation: spin 20s linear infinite 2s;
-    transition: all .5s linear;
-}
+
 
 .figure>img 
 {
     position: relative; 
-    transition: var(--transition);
-
 }
 
 .figure p {
@@ -37,7 +31,6 @@
         width: 100%;
         height: 88%;
         padding-bottom:1rem;
-        transition: var(--transition);
     }
 
     .figure>img
@@ -49,7 +42,7 @@
     .figure:hover
     {
         background-color: var(--background-secondary);
-        bottom:50px;
+        transform: translateY(-40px);
         transition: var(--transition);
         z-index: 1;
     }
@@ -64,6 +57,12 @@
         animation-play-state: paused;
         filter:blur(0);
         height: 100%;
+    }
+    
+    .spin-img:hover
+    {
+        animation: spin 20s linear infinite 2s;
+        transition: all .5s linear;
     }
 }
 @media screen and (min-width: 500px) 
