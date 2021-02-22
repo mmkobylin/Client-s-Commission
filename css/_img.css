@@ -5,6 +5,21 @@
     -webkit-transition: 6s; /* For Safari 3.0 to 6.0 */
 }
 
+.img-magnifier-container {
+    position:relative;
+}
+  
+.img-magnifier-glass {
+position: absolute;
+border: 3px solid #000;
+cursor: none;
+/*Set the size of the magnifier glass:*/
+width: 200px;
+height: 200px;
+z-index: 2;
+}
+
+
 @media screen and ( min-width:600px ) and ( max-width: 1199px )
 { 
     .image3 {

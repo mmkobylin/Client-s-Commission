@@ -1,15 +1,6 @@
-.img-magnifier-container {
-    position:relative;
-}
-  
-.img-magnifier-glass {
-position: absolute;
-border: 3px solid #000;
-cursor: none;
-/*Set the size of the magnifier glass:*/
-width: 200px;
-height: 200px;
-z-index: 2;
+.grid-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media screen and ( min-width:700px ) 
