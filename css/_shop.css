@@ -21,7 +21,7 @@
     padding: 1rem;
 }
 
-.grid-details span::before, .grid-details span::after { 
+.grid-details span::before{ 
     content: "\A"; 
     white-space: pre; 
 }

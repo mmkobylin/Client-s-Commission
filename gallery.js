@@ -1,7 +1,7 @@
 ((d) => {
     var w = window.innerWidth;
 
-    if (w > 500 && w < 700 || w > 1000 ) {
+    if (w > 500 ) {
 
         function magnify(imgID, zoom) {
             var img, glass, w, h, bw;

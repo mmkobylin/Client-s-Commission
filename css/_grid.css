@@ -12,8 +12,17 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr repeat(6 1fr);
         grid-gap: 1rem;
-        margin:0 5%;
+        margin:0 2.5%;
         text-align: center;
+        width: 95%;
+    }
+}
+
+
+@media screen and ( min-width:1200px ) 
+{ 
+    .gallery {
+        margin:0 5%;
         width: 85%;
     }
 }

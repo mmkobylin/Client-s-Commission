@@ -3,7 +3,7 @@
     font-family: var(--font-tetrary);
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 *:not(aside, .aside, button, .aboutme p, article p )
@@ -22,7 +22,6 @@ p:not(footer p)
     padding-top:1rem;
     text-align: justify;
     text-justify: inter-word; 
-       
 }
 
 @media screen and (min-width: 800px) 

@@ -1,0 +1,90 @@
+button 
+{
+    border: none;
+    color: var(--font-color-secondary);
+    font-size: 1rem;
+    margin: 2rem;
+    padding:1rem 1.5rem;
+    outline: none; 
+    /* this is  how tyou change the gradient*/
+    background: linear-gradient(to right, rgb(167, 166, 166) 45%, var(--background-secondary) 53%);
+    /* this is where you enlarge it, 210% extra to cover the edge of*/
+    background-size: 210% 100%;
+    /* this is where you hide it */
+    background-position: right bottom;
+    /* that's the transition */
+    transition: all .5s ease;  
+}
+
+.buttons {
+    display: none;
+    opacity: 0;
+}
+
+.figure:not(:hover) .img-magnifier-glass {
+    display: none;
+}
+
+.figure button {
+    box-shadow: inset 0 0 2px 2px var(--font-color-primary);
+    padding: 1rem;
+    margin: 1rem;
+    transition: all .7s ease;  
+}
+
+button:hover:not(:disabled)
+{
+    /* this is where the position of background changes */
+    background-position: left bottom;
+    color: var(--font-color-primary);
+    cursor: pointer;
+    font-size: bold;
+}
+
+button:disabled
+{
+    box-shadow: none; 
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+@media screen and ( min-width:700px ) and (max-width : 1199px ) 
+{ 
+    button 
+    {
+        font-size: 1.25rem;
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+@media screen and ( min-width:1200px ) 
+{ 
+
+    button {
+        margin: 0;
+        margin-left: 2rem;
+    }
+
+    .btn-command
+    {
+        font-size: 2.5rem;
+        letter-spacing: 2rem;
+        padding: 5rem 2rem;
+        writing-mode: vertical-rl;
+        text-transform: uppercase;
+        text-orientation: upright;
+    }
+
+    .button:hover {
+        font-weight: bold;
+    }
+}
+
+@media screen and ( min-width:1400px ) 
+{ 
+    .btn-command
+    { 
+        letter-spacing: 2rem;
+    }
+}
