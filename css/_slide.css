@@ -59,13 +59,12 @@
         color: var(--font-color-primary);
         font-size: 1.3rem;
         font-weight: bolder;
-       
     }
 
     .message {
         padding: auto;
     }
-    
+
     .phone
     {
         color: var(--font-color-secondary);
