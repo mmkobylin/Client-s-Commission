@@ -6,7 +6,6 @@
 
 .figure>img 
 {
-    height: 80%;
     position: relative; 
 }
 
@@ -34,6 +33,8 @@
     .figure 
     {
         width: 100%;
+        height: 88%;
+        padding:1rem;
     }
 
     .figure>img
@@ -47,7 +48,6 @@
     {
         background-color: var(--background-secondary);
         bottom:50px;
-        transform: scale(1.17);
         transition: all .5s linear;
         z-index: 1;
     }

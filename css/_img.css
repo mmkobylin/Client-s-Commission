@@ -1,6 +1,7 @@
+.spin-img {
+    max-width: 20rem;
+}
 .figure img {
-
-    width: 60%;
     transition: all .5s ease-in-out;
     -webkit-transition: 6s; /* For Safari 3.0 to 6.0 */
 }
