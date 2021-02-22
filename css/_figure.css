@@ -46,8 +46,7 @@
     .figure:hover
     {
         background-color: var(--background-secondary);
-        bottom:50px;
-        transform: scale(1.17);
+        transform: translateY(-30px);
         transition: all .5s linear;
         z-index: 1;
     }
