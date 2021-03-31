@@ -1,20 +1,19 @@
 .homepage-image {
     display: inline;
-    height: fit-content;
-    margin-bottom:0;
+    margin-bottom: 0;
     top: 5.5rem;
     width: 100%;
+    height: 60vh;
+    padding-top: 3vh;
 }
-
 
 @media only screen and (min-width: 700px) 
 {
     .homepage-image {
         display: inline;
-        height: 65%;
-        top: 10rem;
-
-
+        height: 65vh;
+        top: 14vh;
+        padding-top: 0;
     }    
 }
 
