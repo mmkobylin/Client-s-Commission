@@ -1,6 +1,6 @@
 footer {
     background: var( --background-secondary );
-    color: var(--font-color-secondary);
+    color: var(--font-color-tetriary);
     font-size: 1rem;
     font-family: var(--font-secondary);
     padding: 2rem;
@@ -11,21 +11,10 @@ footer p {
     line-height: 2rem;
 }
 
-@media screen and (min-width: 600px) 
-{
-    footer {
-        background: linear-gradient(
-            0deg, var(--font-color-primary) 0%, transparent 20% 80%, 
-            var(--font-color-primary));
-
-    }
-}
-
 @media screen and (min-width: 800px) 
 {
     footer {  
-        font-size: 1.2rem;
-        font-weight: bold;
+        font-size: 1.3rem;
         padding: 2rem 0;
         margin-top: 4rem;
     }
