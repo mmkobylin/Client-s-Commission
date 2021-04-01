@@ -1,6 +1,6 @@
 footer {
     background: var( --background-secondary );
-    color: var(--font-color-tetriary);
+    color: var(--font-color-secondary);
     font-size: 1rem;
     font-family: var(--font-secondary);
     padding: 2rem;

@@ -1,0 +1,7 @@
+.main-gallery>p {
+    color: var(--font-color-secondary);
+    font-size: 1.3rem;
+    position: absolute; 
+    right: 5vw;
+    top: 20vh;
+}
