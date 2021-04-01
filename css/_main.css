@@ -1,7 +1,17 @@
 .main-gallery>p {
     color: var(--font-color-secondary);
-    font-size: 1.3rem;
-    position: absolute; 
-    right: 5vw;
-    top: 20vh;
+    font-size: 1rem;
+    padding: 10vw;
+}
+
+
+@media screen and ( min-width:950px ) 
+{ 
+    .main-gallery>p {
+        font-size: 1.3rem;
+        padding: 0vw;
+        position: absolute; 
+        right: 5vw;
+        top: 20vh;
+    }
 }
