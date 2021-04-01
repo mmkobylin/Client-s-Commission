@@ -32,15 +32,20 @@
 
     .contact-img 
     {
+        padding-left: 5vh;
+    }
+
+    .contact-img 
+    {
         padding-top: 0;
     }
 }
 
 
-@media screen and ( min-width:1000px ) 
+@media screen and ( min-width:1200px ) 
 { 
     .contact-img 
     {
-        padding-left: 2rem;
+        padding-left: 12vh;
     }
 }
