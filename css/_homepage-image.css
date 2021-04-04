@@ -9,11 +9,9 @@
 @media only screen and (min-width: 700px) 
 {
     .homepage-image {
-        padding-top: 3vh;
         display: inline;
         height: 65vh;
         top: 14vh;
-        padding-top: 0;
     }    
 }
 
